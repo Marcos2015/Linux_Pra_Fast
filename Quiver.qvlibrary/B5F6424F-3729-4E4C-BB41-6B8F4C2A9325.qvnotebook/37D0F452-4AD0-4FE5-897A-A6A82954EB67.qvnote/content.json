@@ -1,0 +1,9 @@
+{
+  "title": "CentOS 7安装docker",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><br></div><div><span style=\"font-size: 18px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; line-height: 35px;\">docker最近非常的火，也是未来的发展趋势。今天下午在centos 7上进行了安装，centos 7已经没有service命令了，而是用systemctl命令来代替。具体安装步骤：</span><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">1.yum install docker-io,yum安装docker，需要要root权限</span></p><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">2.systemctl start docker.service ，启动docker&nbsp;</span></p><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">3.systemctl status docker.service ，查看docker的状态</span></p><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">4.chkconfig docker.service &nbsp;，添加开机启动项</span></p><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">5.docker pull centos:latest,获取centos镜像，下载的时间和网络有关，可能会时间比较长！</span></p><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">7.docker image centos,查看镜像</span></p><p style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px; line-height: 35px;\"><span style=\"font-size: 18px;\">8.docker run -i -t ubuntu /bin/bash，运行bash，来跑简单的测试案例！</span></p></div>"
+    }
+  ]
+}

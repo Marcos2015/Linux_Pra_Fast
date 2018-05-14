@@ -1,0 +1,9 @@
+{
+  "title": "eth0:unknown interface: No such device(CentOS6.7)",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><p style=\"color: rgb(51, 51, 51); font-family: tahoma, 宋体; text-align: justify;\">原因</p><p style=\"color: rgb(51, 51, 51); font-family: tahoma, 宋体; text-align: justify;\">新克隆的虚拟机镜像的网卡mac地址已经变更。打开虚拟机的.vmx文件，ethernet0.generatedAddress项记录了该虚拟机的mac地址。</p><p style=\"color: rgb(51, 51, 51); font-family: tahoma, 宋体; text-align: justify;\"><br></p></div><div id=\"isForwardContent\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><div style=\"line-height: 1.7; color: rgb(0, 0, 0);\"><span style=\"font-family: song, Verdana; background-color: rgb(240, 243, 250);\">删除/etc/udev/rules.d/70-persistent-net.rules里的内容，重启一下，就会自动检测了生成相关网卡信息了</span></div></div>"
+    }
+  ]
+}

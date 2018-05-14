@@ -1,0 +1,9 @@
+{
+  "title": "苹果电脑升级到el captain之后编译时出现missing xcrun，怎么办？",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\"><span style=\"color: rgb(34, 34, 34); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px;\">在终端输入:&nbsp;</span><span style=\"font-family: Menlo, Monaco, Consolas, 'Andale Mono', 'lucida console', 'Courier New', monospace; color: rgb(34, 34, 34); font-size: 12px; white-space: pre-wrap; background-color: rgb(248, 248, 248);\">xcode-select --install</span></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(34, 34, 34); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px;\"><br></span></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(34, 34, 34); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px;\"><br></span></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(34, 34, 34); font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; font-size: 13px;\">会安装xcrun</span></div>"
+    }
+  ]
+}

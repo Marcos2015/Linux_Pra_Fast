@@ -1,0 +1,9 @@
+{
+  "title": "查看Linux系统位数命令:getconf LONG_BIT",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">查看linux系统的位数：在shell中输入：getconf LONG_BIT</span>"
+    }
+  ]
+}

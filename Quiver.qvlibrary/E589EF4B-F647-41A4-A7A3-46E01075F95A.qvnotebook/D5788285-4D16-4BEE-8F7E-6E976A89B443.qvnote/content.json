@@ -1,0 +1,9 @@
+{
+  "title": "如何查询一个库文件属于哪个rpm包",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<strong style=\"color: rgb(255, 0, 0); font-family: Arial; font-size: 14px;\">1.如果这个库文件已经存在</strong><div id=\"article_content\" class=\"article_content\" style=\"font-family: Arial; font-size: 14px; margin: 20px 0px 0px; line-height: 26px; color: rgb(54, 46, 43);\"><p>使用rpm命令：</p><p># rpm -qf&nbsp;<strong>&nbsp;/file/path &nbsp;(绝对路径)</strong></p><p>例如：</p># rpm -qf /lib/libm.so.6&nbsp;<br><p>glibc-2.12-1.47.el6.i686</p><p>当然，这适用于rpm包已经安装了的情况。</p><p>如果，没有安装呢？比如系统提示缺少某个库？</p><p><span style=\"color: rgb(255, 0, 0);\"><strong>2.如果这个库文件不存在</strong></span></p><p>可以使用&nbsp;</p><p>#yum provides&nbsp;<strong>libname</strong></p><p><strong>例如：</strong></p><p>[root@blade1 gpfs1]# yum provides libm.so.6<br>Loaded plugins: product-id, refresh-packagekit, security, subscription-manager<br>Updating certificate-based repositories.<br>glibc-2.12-1.107.el6.i686 : The GNU libc libraries<br>Repo &nbsp; &nbsp; &nbsp; &nbsp;: base<br>Matched from:<br>Other &nbsp; &nbsp; &nbsp; : libm.so.6<br>glibc-2.12-1.47.el6.i686 : The GNU libc libraries<br>Repo &nbsp; &nbsp; &nbsp; &nbsp;: rhel-media<br>Matched from:<br>Other &nbsp; &nbsp; &nbsp; : libm.so.6<br>glibc-2.12-1.47.el6.i686 : The GNU libc libraries<br>Repo &nbsp; &nbsp; &nbsp; &nbsp;: installed<br>Matched from:<br>Other &nbsp; &nbsp; &nbsp; : Provides-match: libm.so.6<br></p><p>这里查找到有三个包，可以提供libm.so.6。</p><p>如果不行，可能需要这样：</p><p>#yum provides */<strong>libname</strong><br></p><br><br>如果OS是SuSE，需要使用命令：<br>zypper wp &nbsp;<strong>libname</strong><br><p><br></p><p>注意：<strong>libname 是要查找的库的名字。</strong></p></div>"
+    }
+  ]
+}

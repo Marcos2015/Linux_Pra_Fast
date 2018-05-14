@@ -1,0 +1,9 @@
+{
+  "title": "mac os X生成core文件位置",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div class=\"\" style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px;\"><span class=\"\" style=\"margin: 0px; padding: 0px; font-size: 18px;\">&nbsp; &nbsp; 默认mac os X是不会生成core文件的，因为core文件很大的鸟。</span></div><div class=\"\" style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px;\"><span class=\"\" style=\"margin: 0px; padding: 0px; font-size: 18px;\">&nbsp; &nbsp; 使用ulimit -c unlimited指令打开该功能，可以用ulimit -a查看各个限制的值。</span></div><div class=\"\" style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px;\"><span class=\"\" style=\"margin: 0px; padding: 0px; font-size: 18px;\">&nbsp; &nbsp; 在运行console程序时，同时按下ctrl+\\键退出程序，同时在/core文件夹下</span></div><div class=\"\" style=\"margin: 0px; padding: 0px; color: rgb(85, 85, 85); font-family: 'microsoft yahei'; font-size: 15px;\"><span class=\"\" style=\"margin: 0px; padding: 0px; font-size: 18px;\">&nbsp; &nbsp; 生成core.pid文件。</span></div>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "created_at" : 1509144398,
+  "tags" : [
+
+  ],
+  "title" : "ERROR 2002 (HY000): Can't connect to local MySQL server through socket '\/tmp\/mysql.sock' (2)Mysql启动: mysql.server start",
+  "updated_at" : 1509144409,
+  "uuid" : "DD530C63-946C-41D7-B4E4-71358565CE51"
+}

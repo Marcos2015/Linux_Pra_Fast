@@ -1,0 +1,9 @@
+{
+  "title": ".bash_profile和.bashrc的什么区别",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><span style=\"color: rgb(221, 221, 221);\">&nbsp;</span><span style=\"color: blue;\">/etc/profile:</span><span style=\"color: rgb(221, 221, 221);\">此文件为系统的每个用户设置环境信息,当用户第一次登录时,该文件被执行.并从/etc/profile.d目录的配置文件中搜集shell的设置.</span><br></div><div><span class=\"f14\"><br><span style=\"color: blue;\">/etc/bashrc:</span>为每一个运行bash shell的用户执行此文件.当bash shell被打开时,该文件被读取.<br><br><span style=\"color: blue;\">~/.bash_profile:</span>每个用户都可使用该文件输入专用于自己使用的shell信息,当用户登录时,该文件仅仅执行一次!默认情况下,他设置一些环境变量,执行用户的<strong style=\"background-color: rgb(160, 255, 255);\">.bashrc</strong>文件.<br><br><span style=\"color: blue;\">~/<strong style=\"color: black; background-color: rgb(160, 255, 255);\">.bashrc</strong>:</span>该文件包含专用于你的bash shell的bash信息,当登录时以及每次打开新的shell时,该文件被读取.（<span style=\"color: rgb(128, 0, 0);\">每个用户都有一个.bashrc文件，在用户目录下</span>）<br><br><span style=\"color: blue;\">~/.bash_logout:</span>当每次退出系统(退出bash shell)时,执行该文件.&nbsp;<br><br>另外,/etc/profile中设定的变量(全局)的可以作用于任何用户,而~/<strong style=\"background-color: rgb(160, 255, 255);\">.bashrc</strong>等中设定的变量(局部)只能继承/etc/profile中的变量,他们是\"父子\"关系.<br>&nbsp;<br>~/.bash_profile 是交互式、login 方式进入 bash 运行的<br>~/<strong style=\"background-color: rgb(160, 255, 255);\">.bashrc</strong>&nbsp;是交互式 non-login 方式进入 bash 运行的<br>通常二者设置大致相同，所以通常前者会调用后者。</span><br></div>"
+    }
+  ]
+}

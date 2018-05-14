@@ -1,0 +1,9 @@
+{
+  "title": "运行yum报错Error: Cannot retrieve metalink for reposit",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"background-color: rgb(255, 255, 255); vertical-align: baseline; color: rgb(51, 51, 51); font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px;\">今天给<span style=\"vertical-align: baseline;\"><a href=\"http://www.netpc.com.cn/tag/centos/\" target=\"_blank\" rel=\"nofollow\">Centos</a></span>通过rpm -Uvh装了个epel的扩展后，执行<span style=\"vertical-align: baseline;\"><a href=\"http://www.netpc.com.cn/tag/yum/\" target=\"_blank\" rel=\"nofollow\">yum</a></span>就开始报错：&nbsp;</p><p style=\"background-color: rgb(255, 255, 255); vertical-align: baseline; color: rgb(51, 51, 51); font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px;\">Error: Cannot retrieve metalink for repository: epel. Please verify its path and try again&nbsp;</p><p style=\"background-color: rgb(255, 255, 255); vertical-align: baseline; color: rgb(51, 51, 51); font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px;\">在网上查了查，解决办法都是编辑/etc/yum.repos.d/epel.repo，把基础的恢复，镜像的地址注释掉&nbsp;</p><p style=\"background-color: rgb(255, 255, 255); vertical-align: baseline; color: rgb(51, 51, 51); font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px;\">#baseurl<br>mirrorlist&nbsp;</p><p style=\"background-color: rgb(255, 255, 255); vertical-align: baseline; color: rgb(51, 51, 51); font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px;\">改成&nbsp;</p><p style=\"background-color: rgb(255, 255, 255); vertical-align: baseline; color: rgb(51, 51, 51); font-family: Georgia, 'Bitstream Charter', serif; font-size: 16px;\">baseurl<br>#mirrorlist</p>"
+    }
+  ]
+}

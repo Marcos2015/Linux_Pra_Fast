@@ -1,0 +1,9 @@
+{
+  "title": "Mac OS X 启用超级用户 sudo -s 获得系统权限 Mac终端命令",
+  "cells": [
+    {
+      "type": "text",
+      "data": "在Mac系统下如果要使用超级用户权限执行普通用户命令,需要在命令前添加: sudo -s .<div><br></div><div>eg:</div><div>&nbsp; &nbsp; &nbsp; &nbsp; sudo -s vim +BundleInstall +qall</div><div><br></div>"
+    }
+  ]
+}

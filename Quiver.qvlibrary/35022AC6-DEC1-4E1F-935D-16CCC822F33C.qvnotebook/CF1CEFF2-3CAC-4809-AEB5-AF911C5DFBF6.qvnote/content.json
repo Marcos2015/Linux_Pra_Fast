@@ -1,0 +1,9 @@
+{
+  "title": "Reactor和Proactor模式分别有哪些网络库",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span class=\"RichText CopyrightRichText-richText\" itemprop=\"text\"><p>Reactor: <br>libevent/libev/libuv/ZeroMQ/Event Library in Redis</p><p>Proactor<br>IOCP/Boost.Asio</p>linux下还是Reactor把, 没有os支持, Proactor玩不转.</span>"
+    }
+  ]
+}

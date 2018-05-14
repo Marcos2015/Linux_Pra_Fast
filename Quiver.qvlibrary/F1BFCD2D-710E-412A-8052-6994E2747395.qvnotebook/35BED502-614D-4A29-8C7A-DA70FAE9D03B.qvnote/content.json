@@ -1,0 +1,9 @@
+{
+  "title": "Linux临时更改IP地址的方法",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><table cellspacing=\"0\" cellpadding=\"0\" style=\"word-wrap: break-word; empty-cells: show; font-size: 12px; font-family: verdana, arial, helvetica; table-layout: fixed; width: 1010px; color: rgb(0, 0, 0); line-height: 18px;\"><tbody style=\"word-wrap: break-word;\"><tr style=\"word-wrap: break-word;\"><td class=\"t_f\" id=\"postmessage_4043684\" style=\"word-wrap: break-word;\">我使用的是红旗linux 4.1，想给网卡换个ip地址，于是使用如下命令设置<br style=\"word-wrap: break-word;\">ifconfig eth0 192.168.1.15 netmask 255.255.255.0&nbsp;<br style=\"word-wrap: break-word;\">完成后，使用ifconfig命令查看，设置成功，而且其他机器也能通过这个ip连接，但是问题是，每次重启后，ip又恢复到更改之前，我一开始以为是因为设置完后没有重起network服务，但是测试重启network服务后，重启系统情况还是一样。<br style=\"word-wrap: break-word;\">我注意到每次改完ip关机的时候，都会提示，\"device eth0 has diffrerent MAC address than expected\" 我估计问题出在这，请问这是怎么回事啊<br style=\"word-wrap: break-word;\"><div>另外：我在图形界面里用红旗的网络配置工具配置一切都是正常的，主要是想知道命令模式下该如何正确设置ip，谢谢啊</div><div><br></div><div><br></div><div><table cellspacing=\"0\" cellpadding=\"0\" style=\"word-wrap: break-word; empty-cells: show; table-layout: fixed; width: 1010px; color: rgb(0, 0, 0); line-height: 18px;\"><tbody style=\"word-wrap: break-word;\"><tr style=\"word-wrap: break-word;\"><td class=\"t_f\" id=\"postmessage_4044886\" style=\"word-wrap: break-word;\">命令行下要直接修改/etc/sysconfig/network-script/ifcfg-eth0的,用ifconfig只是临时的修改,没有写到配置文件里</td></tr></tbody></table></div></td></tr></tbody></table>"
+    }
+  ]
+}

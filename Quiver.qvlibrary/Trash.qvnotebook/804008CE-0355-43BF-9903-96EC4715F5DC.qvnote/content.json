@@ -1,0 +1,10 @@
+{
+  "title": "C programmer",
+  "cells": [
+    {
+      "type": "code",
+      "language": "c_cpp",
+      "data": "#include <stdio.h>\n#define Te 100\n\n\nint main()\n{\n  printf(\"hello\\n\");\n  return 0;\n  \n}"
+    }
+  ]
+}

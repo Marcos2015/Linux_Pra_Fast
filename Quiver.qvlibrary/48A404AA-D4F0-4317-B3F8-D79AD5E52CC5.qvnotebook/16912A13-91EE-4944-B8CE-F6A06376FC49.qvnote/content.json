@@ -1,0 +1,9 @@
+{
+  "title": "htons函数的问题",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<pre class=\"line mt-10 q-content\" style=\"color: rgb(0, 0, 0); font-size: 14px;\">我用htons()为什么转换后的端口会不一样?<br>比如我用htons(4367),调试的结果居然变为3857,<br>这是为什么?怎么解决啊?<br>------------------<br>int connectclient()<br>{<br> <br>  SOCKET s;<br>  s=::socket(AF_INET,SOCK_STREAM,0);<br>  SOCKADDR_IN sin;<br>  sin.sin_family=AF_INET;<br>  sin.sin_port=htons(4367);<br>  sin.sin_addr.S_un.S_addr=inet_addr(\"127.0.0.1\");<br>---------------------------------------------------<br>调试跟踪居然端口变成了3857。。这是为什么呀。。程序好像没错呀？<br>下面这段1589居然变成了13574,好像指定端口居然成了随机端口了。<br>sockaddr_in client;<br>  client.sin_family=AF_INET;<br>  client.sin_port=htons(1589);<br>  client.sin_addr.S_un.S_addr=inet_addr(\"127.0.0.1\");</pre><pre class=\"line mt-10 q-supply-content\" style=\"color: rgb(0, 0, 0); font-size: 14px;\">不好意思。1楼。想来你没搞清。我不是不懂这个函数的原意。<br>是说我明明指定端口。。而程序在编译时却自动改变端口号。<br>造成我的客户端无法连接上我的服务端的指定端口？<br>要怎么才能连接上？<br></pre><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">（我的客户端的指定端口和服务端的一样，这没有错）<br><br><br><pre id=\"best-content-432512876\" class=\"best-text mb-10\">htons 是把你机器上的整数转换成“网络字节序”， 网络字节序是 big-endian，也就是整数的高位字节在前面。 而我们常用的 x86 CPU (intel, AMD) 电脑是 little-endian,也就是整数的低位字节放在前面。举个例子吧。假定你的port是<br>0x1234,<br><br>在网络字节序里 这个port放到内存中就应该显示成<br>addr    addr+1<br>0x12    0x34<br><br>而在x86电脑上，0x1234放到内存中实际是：<br>addr    addr+1<br>0x32    0x12<br><br>htons 的用处就是把实际内存中的整数存放方式调整成“网络字节序”的方式。 <br><br>再次回楼主，你的问题就是我说的， htons(4367) 后，在x86机器上，就是变成了 3857，就是因为字节序被调整了，这是正确的. 4367十六进制是0x110F，由于是little endian所以在内存中存放的是<br>0x0F  0x11<br><br>htons后，变成网络字节续，也就是<br>0x11 0x0F<br>这个数字如果你去看了话，就是<br>3857. <br><br>你debug的时候，直接去看端口的内存里的内容，就明白了。</pre></div>"
+    }
+  ]
+}

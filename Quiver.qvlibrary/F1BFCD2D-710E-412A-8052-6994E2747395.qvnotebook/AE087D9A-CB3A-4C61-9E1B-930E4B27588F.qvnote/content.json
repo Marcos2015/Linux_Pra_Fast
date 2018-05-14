@@ -1,0 +1,9 @@
+{
+  "title": "basename()函数详解",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<em style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><em><p>函数原型：linux终端下输入 man 3 basename &nbsp;可以查看到</p><p><strong>&nbsp;#include &lt;libgen.h&gt;&nbsp; &nbsp;</strong></p><p><strong>char *basename(char *path);</strong></p><p>参数path是文件的路径 PS：这里的文件路径就是/home/<span id=\"0_nwp\" style=\"width: auto; height: auto;\"><a target=\"_blank\" href=\"http://cpro.baidu.com/cpro/ui/uijs.php?rs=1&amp;u=http%3A%2F%2Fwww%2Eth7%2Ecn%2Fsystem%2Flin%2F201407%2F64806%2Eshtml&amp;p=baidu&amp;c=news&amp;n=10&amp;t=tpclicked3_hc&amp;q=smileking_cpr&amp;k=linux&amp;k0=linux&amp;kdi0=8&amp;sid=7ac6e6ff30322a&amp;ch=0&amp;tu=u1682280&amp;jk=6e4784243d143b82&amp;cf=29&amp;fv=15&amp;stid=9&amp;urlid=0&amp;luki=1&amp;seller_id=1&amp;di=128\" id=\"0_nwl\" style=\"text-decoration: none;\"><span style=\"color: rgb(0, 0, 255); width: auto; height: auto;\">linux</span></a></span>/txt.c 这种类型而已，basename函数并不会关心路径是否正确，文件是否存在，只不过是把路径上除了最后</p><p>的txt.c 这个文件名字其他的东西都删除了然后返回而已</p><p><br></p><p>例：</p><p><strong>#include \"stdio.h\"<br>#include \"libgen.h\"<br>int main()<br>{<br>&nbsp; &nbsp; &nbsp; &nbsp; char *p;<br>&nbsp; &nbsp; &nbsp; &nbsp; p = basename(\"nihao/nihao/jhhh/999\"); &nbsp;// 这里只要加上自己想填的路径即可<br>&nbsp; &nbsp; &nbsp; &nbsp; printf(\"%s/n\",p);<br>&nbsp; &nbsp; &nbsp; &nbsp; return 0;<br>}<br></strong></p><p><strong>最终打印的结果是999&nbsp;</strong></p><p>但是如果路径最后并没有加上文件就会报段错误&nbsp;</p><p><br></p><p><strong>#include \"stdio.h\"<br>#include \"libgen.h\"<br>int main()<br>{<br>&nbsp; &nbsp; &nbsp; &nbsp; char *p;<br>&nbsp; &nbsp; &nbsp; &nbsp; p = basename(\"nihao/nihao/jhhh/\"); &nbsp;// 这里没有最终的文件名<br>&nbsp; &nbsp; &nbsp; &nbsp; printf(\"%s/n\",p);<br>&nbsp; &nbsp; &nbsp; &nbsp; return 0;<br>}</strong></p></em></em>"
+    }
+  ]
+}

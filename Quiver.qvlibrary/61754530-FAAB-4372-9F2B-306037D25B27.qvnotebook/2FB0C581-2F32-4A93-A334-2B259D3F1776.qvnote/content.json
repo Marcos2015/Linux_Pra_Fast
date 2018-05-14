@@ -1,0 +1,9 @@
+{
+  "title": "Sublime Text 3 编译多文件",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<h3 style=\"margin: 30px 0px; padding: 0px 0px 5px; color: rgb(85, 85, 85); font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); font-size: 2em; word-spacing: 2px; border-bottom-width: 1px; border-bottom-style: solid; border-bottom-color: rgb(221, 221, 221); font-family: serif;\">使用makefile编译多个文件</h3><p style=\"margin: 20px 0px 0px; padding: 0px; font-family: 'microsoft yahei'; font-size: 15px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5; color: rgb(17, 17, 17);\">sublime可以使用makefile来编译多个文件，以便支持稍大一点的工程项目。只要在侧边栏中打开相关的文件夹，确保文件夹中包含makefile文件。此时按下Ctrl+Shift+B ，会有make的选项，点击执行就可以了。</p><p style=\"margin: 20px 0px 0px; padding: 0px; font-family: 'microsoft yahei'; font-size: 15px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255); text-indent: 2em; line-height: 1.5; color: rgb(17, 17, 17);\"><a target=\"_blank\" href=\"http://7d9rd6.com1.z0.glb.clouddn.com/wp-content/uploads/2015/02/2015-11-02-21_16_21-F__KP_Project_regex_ori_main.c-regex_ori-Sublime-Text-UNREGISTERED.png\" style=\"text-decoration: none; color: rgb(45, 100, 179); margin: 0px; padding: 0px;\"><img title=\"sublime text 3配置c/c++编译环境 17\" alt=\"sublime text 3配置c/c++编译环境 17\" class=\"alignnone size-full wp-image-2023\" src=\"quiver-image-url/371176D97504341A43FC46779DA24F23.png\" width=\"553\" height=\"424\" style=\"border: 0.3em solid rgb(238, 238, 238); max-width: 90%; max-height: 100%; margin: 0px; padding: 0px;\"></a></p><div><br></div>"
+    }
+  ]
+}

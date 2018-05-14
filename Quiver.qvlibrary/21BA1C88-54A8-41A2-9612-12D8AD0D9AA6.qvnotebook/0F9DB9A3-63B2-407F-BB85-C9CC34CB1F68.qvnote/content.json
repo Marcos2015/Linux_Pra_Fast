@@ -1,0 +1,9 @@
+{
+  "title": "嵌入式Linux内核开发和驱动开发是不是都属于系统开发？？或者都属于底层开发？",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"font-size: 14px; font-family: arial; white-space: pre-wrap; background-color: rgb(241, 254, 221); color: rgb(51, 51, 51); line-height: 24px;\">驱动属于内核的一部分，但和系统开发有存在较大的区别。系统开发里，重点是理解CPU指令以及硬件架构，然后通过软件程序设计出调配硬件资源的一套体系，而驱动程序通常扮演着系统与具体硬件通讯的桥梁，当然也有虚拟设备或过滤驱动这种例外的概念。从应用层来看，这种开发都属于底层开发。但从硬件层来看，这些就不算那么底层了。</span><pre id=\"best-content-1247745892\" accuse=\"aContent\" class=\"best-text mb-10\" style=\"font-size: 14px; margin-top: 0px; margin-bottom: 10px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace; color: rgb(51, 51, 51); line-height: 24px; background-color: rgb(241, 254, 221);\">目前的企业较多是在搞系统移植或定制硬件的驱动开发，但要做这样的工作不是很快上手的，而且学习也要花比较长的时间，真要等到技术水平从零到能适应工作需求，估计也要个3-5年时间，而且这还要看个人的机遇和心态决定。</pre>"
+    }
+  ]
+}

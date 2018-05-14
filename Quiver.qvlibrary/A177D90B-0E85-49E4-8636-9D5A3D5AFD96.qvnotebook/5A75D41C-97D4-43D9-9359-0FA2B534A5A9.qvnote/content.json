@@ -1,0 +1,9 @@
+{
+  "title": "Centos 7 快速安装 mariadb(命令语法)",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">从最新版本的linux系统开始，默认的是 Mariadb而不是mysql！</p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">使用系统自带的repos安装很简单：</p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\"><br></p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">yum install mariadb mariadb-server</p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">systemctl start mariadb ==&gt; 启动mariadb<br></p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">systemctl enable mariadb ==&gt; 开机自启动<br></p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">mysql_secure_installation ==&gt; 设置 root密码等相关<br></p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">mysql -uroot -p123456 ==&gt; 测试登录！</p><p style=\"font-family: Arial; font-size: 14px; color: rgb(51, 51, 51); line-height: 26px;\">结束</p>"
+    }
+  ]
+}

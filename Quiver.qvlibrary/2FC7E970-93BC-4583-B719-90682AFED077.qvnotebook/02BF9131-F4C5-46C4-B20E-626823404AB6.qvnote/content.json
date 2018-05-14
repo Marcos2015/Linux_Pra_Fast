@@ -1,0 +1,9 @@
+{
+  "title": "cin cout效率没scanf printf高为什么用",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); line-height: 1.7; font-size: 14px; font-family: arial;\"><pre id=\"best-content-490609910\" accuse=\"aContent\" class=\"best-text mb-10\" style=\"margin-top: 0px; margin-bottom: 10px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace; color: rgb(51, 51, 51); line-height: 24px; background-color: rgb(241, 254, 221);\">主要有以下几个原因：<br>1.流输入输出对于基本类型来说使用很方便，不用手写格式控制字符串。<br>2.对于标准库的一些class来说，显然重载操作符也比自己写格式控制字符串要方便很多。<br>3.对于复杂的格式可以进行自定义操作符。<br>4.可读性更好（这个很多人有不同意见，见仁见智了）。<br>其实原理上来说流操作的效率比printf/scanf函数族更高，因为是在编译期确定操作数类型和调用的输出函数，不用在运行期解析格式控制字符串带来额外开销。不过标准流对象cin/cout为了普适性，继承体系很复杂，所以在对象的构造等方面会影响效率，因此总体效率比较低。如果根据特定的场景进行优化，效率可以更高一点。</pre></div><br style=\"color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px;\"><br style=\"color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px;\"><span title=\"neteasefooter\" style=\"color: rgb(0, 0, 0); font-family: Helvetica; font-size: 12px;\"><span id=\"netease_mail_footer\"><div id=\"netease_mail_footer\"><div style=\"border-top-width: 1px; border-top-style: solid; border-top-color: rgb(204, 204, 204); padding: 10px 5px; color: rgb(102, 102, 102); line-height: 22px;\">来自网易手机号码邮箱<a id=\"mobile_set\" sys=\"1\" log=\"1\" logid=\"free_sms_20120504\" href=\"http://shouji.163.com/\" target=\"_blank\" style=\"color: rgb(0, 0, 255);\">了解更多</a></div></div></span></span>"
+    }
+  ]
+}

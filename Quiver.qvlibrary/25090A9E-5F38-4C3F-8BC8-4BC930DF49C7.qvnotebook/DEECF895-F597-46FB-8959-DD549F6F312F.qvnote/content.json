@@ -1,0 +1,9 @@
+{
+  "title": "Cmake交叉编译真实例子",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; line-height: 1.7;\">project(main)</span><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">CMAKE_MINIMUM_REQUIRED(VERSION 2.8)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">AUX_SOURCE_DIRECTORY(/users/thomas/downloads/src2 &nbsp;demo)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">ADD_EXECUTABLE(main ${demo})</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(CMAKE_SYSTEM_NAME Linux)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(TOOLCHAIN_DIR \"/usr/local/gcc5.1_source/bin/\")</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(CMAKE_FIND_ROOT_PATH_MODE ${TOOCHAIN_DIR})</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(CMAKE_C_COMPILER ${TOOLCHAIN_DIR}gcc)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(CMAKE_CXX_COMPILER ${TOOLCHAIN_DIR}g++)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(CMAKE_FIND_ROOT_PATH_LIBRARY &nbsp;/usr/local/gcc5.1_source/lib)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">SET(CMAKE_FIND_ROOT_PATH_INCLUDE &nbsp;/usr/local/gcc5.1_source/include &nbsp;/usr/include)</div>"
+    }
+  ]
+}

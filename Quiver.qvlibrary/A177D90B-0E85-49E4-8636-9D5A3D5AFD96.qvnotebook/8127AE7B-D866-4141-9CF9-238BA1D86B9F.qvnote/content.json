@@ -1,0 +1,9 @@
+{
+  "title": "安装mysql的路径(暂时的一次性的)",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><span style=\"color: rgb(0, 0, 0); font-family: arial; font-size: 14px;\">先查询目前路径：</span><br></div><div><div style=\"color: rgb(0, 0, 0); line-height: 1.7; font-size: 14px; font-family: arial;\"><div id=\"isForwardContent\"><div style=\"line-height: 1.7; color: rgb(0, 0, 0);\"><div><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span>echo $PATH:查找出当前路径</div><div><br></div><div>然后:export PATH=当前路径&nbsp;加上mysql的位置路径即可。</div><div>or:</div><div><span class=\"Apple-tab-span\" style=\"white-space: pre;\">\t</span><span class=\"Apple-style-span\" style=\"font-family: simsun;\">export PATH=$PATH:$/usr/local/mysql/bin</span></div></div></div></div></div>"
+    }
+  ]
+}

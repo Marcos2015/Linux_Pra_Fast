@@ -1,0 +1,9 @@
+{
+  "title": "Linux -soname深入理解",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; text-align: center;\"><h1 class=\"aTitle\"><span style=\"color: rgb(0, 0, 0); font-size: 14px;\">-Wl 表示后面的参数也就是-soname,libhello.so.1直接传给连接器ld进行处理。实际上，每一个库都有一个soname，当连接器发现它正 在查找的程序库中有这样一个名称，连接器便会将soname嵌入连结中的二进制文件内，而不是它正在运行的实际文件名，在程序执行期间，程序会查找拥有 soname名字的文件，而不是库的文件名，换句话说，soname是库的区分标志。</span><br></h1></div><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">这样做的目的主要是允许系统中多个版本的库文件共存，习惯上在命名库文件的时候通常与soname相同</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">libxxxx.so.major.minor</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">其中，xxxx是库的名字，major是主版本号，minor 是次版本号</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">简单的来说，soname指定了库的名字，而不去管生成的是什么名字的库，在做连接是将这个soname指定的名字加入执行文件中，而程序运行是也 是去加载soname指定的库文件名。所以如果程序连接了新升级的库，只需要将这个新库拷贝到目录下面后，对其以soname做一个符号链接就能调用。</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">如果库升级了，但是程序依旧使用旧的链接库，那么只需对这个将旧库名字软链接到新升级的库中去即可。</p>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Centos 开机默认启动网卡的设置方法",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">我们开机网卡不能启动所以只能使用</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">ifup eth0</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">来启动了，但是每一次都这样感觉不方便希望开机自动启动网卡</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br>后来百度搜索了一下发现可以通过修改网卡( ifcfg-eth0)参数来修改为开机启动，即打开 ifcfg-eth0 文件</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">例子</p><table align=\"center\" border=\"0\" cellpadding=\"1\" cellspacing=\"1\" width=\"620\" style=\"font-family: Arial; background-color: rgb(255, 187, 119);\"><tbody><tr><td bgcolor=\"#FFE7CE\" height=\"27\" width=\"464\">&nbsp;代码如下</td><td align=\"center\" bgcolor=\"#FFE7CE\" width=\"109\" style=\"cursor: pointer;\">复制代码</td></tr><tr><td colspan=\"2\" class=\"copyclass\" id=\"copy3345\" bgcolor=\"#FFFFFF\" height=\"auto\" valign=\"top\" style=\"padding: 10px;\"><p>[root@localhost ~]# vim /etc/sysconfig/network-scripts/ifcfg-eth0&nbsp;&nbsp;&nbsp;<br>DEVICE=eth0&nbsp;&nbsp;&nbsp;<br>HWADDR=08:00:27:fa:47:4c&nbsp;&nbsp;&nbsp;<br>NM_CONTROLLED=yes&nbsp;&nbsp;&nbsp;<br><font color=\"#ff0000\">ONBOOT=yes ------------------修改如下内容为yes就可以开机自动启动了.&nbsp;&nbsp;&nbsp;<br></font>BOOTPROTO=dhcp&nbsp;&nbsp;&nbsp;<br>DNS2=222.85.85.85&nbsp;&nbsp;&nbsp;<br>TYPE=Ethernet&nbsp;&nbsp;&nbsp;<br>DNS1=222.88.88.88&nbsp;&nbsp;&nbsp;<br>USERCTL=no&nbsp;&nbsp;&nbsp;<br>PEERDNS=yes&nbsp;&nbsp;&nbsp;<br>IPV6INIT=no&nbsp;</p></td></tr></tbody></table>"
+    }
+  ]
+}

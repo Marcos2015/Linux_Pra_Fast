@@ -1,0 +1,9 @@
+{
+  "title": "设置vi软链接vim",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<pre id=\"best-content-1176281197\" class=\"best-text mb-10\" style=\"color: rgb(0, 0, 0); font-size: 14px;\">按照以下步骤吧：<br>$ echo alias vi='vim' &gt;&gt; ~/.bashrc<br>$ source ~/.bashrc<br>然后执行vi就可以了。</pre>"
+    }
+  ]
+}

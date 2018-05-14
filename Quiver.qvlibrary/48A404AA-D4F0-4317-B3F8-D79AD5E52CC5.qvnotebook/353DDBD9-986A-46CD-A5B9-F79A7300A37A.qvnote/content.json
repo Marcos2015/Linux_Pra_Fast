@@ -1,0 +1,9 @@
+{
+  "title": "sockaddr 与 sockaddr_in 的区别与联系",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<table width=\"660\" align=\"center\" border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"font-family: Arial;\"><tbody><tr><td class=\"Ftext1\" height=\"30\">sockaddr 与 sockaddr_in 的区别与联系</td></tr><tr><td class=\"F14\">Sockfd是调用socket函数返回的socket描述符,my_addr是一个指向包含有本机IP地址及端口号等信息的sockaddr类型的指<br>针；addrlen常被设置为sizeof(struct sockaddr)。 　　struct<br>sockaddr结构类型是用来保存socket信息的： 　　struct sockaddr { 　　 unsigned short<br>sa_family; /* 地址族， AF_xxx */ char sa_data[14]; /* 14 字节的协议地址 */ };<br>　　sa_family一般为AF_INET，代表Internet（TCP/IP）地址族；sa_data则包含该socket的IP地址和端口号。<br>　　另外还有一种结构类型： 　　struct sockaddr_in { 　　 short int sin_family; /* 地址族 */<br>　　 unsigned short int sin_port; /* 端口号 */ 　　 struct in_addr sin_addr;<br>/* IP地址 */ 　　 unsigned char sin_zero[8]; /* 填充0 以保持与struct sockaddr同样大小<br>*/ 　　}; 　　这个结构更方便使用。sin_zero用来将sockaddr_in结构填充到与struct<br>sockaddr同样的长度，可以用bzero()或memset()函数将其置为零。指向sockaddr_in<br>的指针和指向sockaddr的指针可以相互转换，这意味着如果一个函数所需参数类型是sockaddr时，你可以在函数调用的时候将一个指向<br>sockaddr_in的指针转换为指向sockaddr的指针；或者相反。</td></tr></tbody></table>"
+    }
+  ]
+}

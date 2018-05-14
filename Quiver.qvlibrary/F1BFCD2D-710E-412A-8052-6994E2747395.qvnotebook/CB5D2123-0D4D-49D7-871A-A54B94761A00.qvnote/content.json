@@ -1,0 +1,9 @@
+{
+  "title": "/etc/profile和/root/.bash_profile有什么区别",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">/etc/profile是全局的，是私有的</p><pre name=\"code\" id=\"best-content-293776113\" class=\"best-text mb-10\" style=\"font-size: 14px; margin-top: 0px; margin-bottom: 10px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace; white-space: pre-wrap; word-wrap: break-word; color: rgb(51, 51, 51); line-height: 24px; background-color: rgb(241, 254, 221);\">/etc/profile用于整个系统所有用户， ~/.bash_profile, ~/.profile和~/.bashrc 用于各个用户，这里的\"~\"符号就是各当前用户的$HOME\n~/.bash_profile 和 ~/.profile 只在登陆时读取一次。\n~/.bashrc 每次都读取\n\n~/.bash_profile 和 ~/.profile 的区别在于，bash 只读取~/.bash_profile；而对于 ~/.profile 来说，不光bash, 其他shell 也读 ~/.profile </pre>"
+    }
+  ]
+}

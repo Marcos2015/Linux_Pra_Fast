@@ -1,0 +1,9 @@
+{
+  "title": "mysql更改密码",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); line-height: 1.7; font-size: 14px; font-family: arial;\"><div style=\"color: rgb(255, 0, 0);\">第一种</div><div id=\"isForwardContent\"><div style=\"line-height: 1.7; color: rgb(0, 0, 0);\"><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(0, 249, 0);\"><span style=\"background-color: rgb(0, 0, 128);\">mysql&gt;update mysql.user SET password=PASSWORD(\"新密码\") where User=\"root\";</span></p><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(0, 249, 0);\"><span style=\"background-color: rgb(0, 0, 128);\"><br></span></p><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(0, 249, 0);\"><span style=\"background-color: rgb(0, 0, 128);\">mysql&gt;FLUSH PRIVILEGES;</span></p><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(0, 249, 0);\"><span style=\"background-color: rgb(0, 0, 128);\"><br></span></p><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(255, 0, 0);\">第二种</p><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(0, 249, 0);\"><span style=\"background-color: rgb(0, 0, 128);\">1.先退出mysql;</span></p><p style=\"margin: 0px; font-size: 18px; line-height: normal; font-family: SimSun; color: rgb(0, 249, 0);\"><span style=\"background-color: rgb(0, 0, 128);\">2.输入mysqladmin -uroot(用户名) -p旧密码(如一开始默认为空就可以省略) password新密码;</span></p></div></div></div>"
+    }
+  ]
+}

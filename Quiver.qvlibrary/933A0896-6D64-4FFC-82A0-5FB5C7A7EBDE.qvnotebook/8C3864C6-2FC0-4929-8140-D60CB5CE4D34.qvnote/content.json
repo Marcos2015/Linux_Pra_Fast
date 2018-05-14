@@ -1,0 +1,9 @@
+{
+  "title": "切换隐藏文件",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<br class=\"Apple-interchange-newline\"><table cellspacing=\"0\" cellpadding=\"0\" style=\"word-wrap: break-word; empty-cells: show; table-layout: fixed; width: 744px; color: rgb(51, 51, 51); font-family: 微软雅黑, Arial, HELVETICA; font-size: 12px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(254, 254, 254);\"><tbody style=\"word-wrap: break-word;\"><tr style=\"word-wrap: break-word;\"><td class=\"t_f\" id=\"postmessage_51572434\" style=\"word-wrap: break-word; margin: 0px; padding: 0px; color: rgb(17, 17, 17); font-size: 14px; line-height: 2;\">在打开和保存对话框中 在打开和保存对话框中，有一个方便的键盘快捷键来切换隐藏文件的可见度。在活动对话框中按Command+Shift+.（点）就可以显示隐藏文件，再按一次恢复。</td></tr></tbody></table>"
+    }
+  ]
+}

@@ -9,7 +9,7 @@ struct node
 };
 
 
-struct node* create(int n)
+struct node* create(int n) //生成循环链表
 {
     struct node* ptr,*head,*point;
     point=ptr=head=NULL;
@@ -37,7 +37,7 @@ struct node* create(int n)
 
 
 
-struct node* foreach(struct node* head)
+struct node* foreach(struct node* head) //遍历循环链表
 {
     struct node* point;
     point=head;
@@ -73,7 +73,7 @@ struct node* insert(struct node* old_link)
 
 
 
-struct node* node_find(struct node* head,int i)
+struct node* node_find(struct node* head,int i)//寻找循环链表的节点
 {
     struct node* p;
     p=head;

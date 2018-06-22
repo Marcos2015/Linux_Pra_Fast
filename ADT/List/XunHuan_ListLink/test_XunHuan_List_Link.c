@@ -27,7 +27,7 @@ struct stu* create(int n)
 		    p2->next=p1;
 	    }
 	p2=p1;
-	p1->next=NULL;
+	p2->next=NULL;
     }
 
     p1->next=head;
@@ -37,7 +37,7 @@ struct stu* create(int n)
 
 
 
-int foreach(struct stu* head)
+struct stu* foreach(struct stu* head)
 {
 	struct stu* point=head;
 	do
@@ -46,9 +46,9 @@ int foreach(struct stu* head)
 		point=point->next;
 	}while(point!=head);
 
-//putchar(10);
-printf("\n");
-	return 0;
+putchar(10);
+//printf("\n");
+	return head;
 }
 
 

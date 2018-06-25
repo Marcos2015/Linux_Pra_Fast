@@ -56,7 +56,7 @@ struct node* traverse(struct node* head) //遍历循环链表
 
 
 
-struct node* node_find(struct node* head,int i)//寻找循环链表的节点
+struct node* find_node(struct node* head,int i)//寻找循环链表的节点
 {
     printf("need to find node is: %d\t\n",i);
     struct node* p;
@@ -117,7 +117,7 @@ struct node* node_find(struct node* head,int i)//寻找循环链表的节点
 int main()
 {
     	struct node* p=create(10);
-	node_find(p,5);
+	find_node(p,5);
 	traverse(p);
 
     return 0;

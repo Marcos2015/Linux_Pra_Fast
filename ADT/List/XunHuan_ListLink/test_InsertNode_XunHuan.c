@@ -56,7 +56,7 @@ struct node* insertnode(struct node* old_link)
 {
 	struct node* current,*head;
 	struct node* p=(struct node*)malloc(sizeof(struct node));
-	p->num=100;
+	p->num=12345;
 	p->next=old_link;
 	head=current=old_link;
 
@@ -65,6 +65,7 @@ struct node* insertnode(struct node* old_link)
 		current=current->next;
 	}
 
+	current->next=p;//如果缺少这行代码,即是没有把新节点插入进去,current通过current=current->next,已经循环跑到链表的最后一个节点,所以只需current->next=p即可将新节点链接在循环链表里面.
 
 
 	head=p;
@@ -77,8 +78,8 @@ struct node* insertnode(struct node* old_link)
 
 int main()
 {
-	struct node* p=create(7);
-	traverse(p);
+	struct node* p=create(10);
+	//traverse(p);
 //	traverse(insertnode(create(9)));
        struct node* p2=insertnode(p);
        traverse(p2);

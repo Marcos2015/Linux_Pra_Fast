@@ -76,11 +76,13 @@ struct node* insert_node(struct node* head,struct node* p)
 
 int foreach(struct node* head)
 {
-    while(head!=NULL)
+	struct node* point=head;
+    while(point!=NULL)
     {
-	printf("%d\t",head->num);
-    	head=head->next;
+	printf("%d\t",point->num);
+    	point=point->next;
     }
+    putchar(10);
 }
 
 

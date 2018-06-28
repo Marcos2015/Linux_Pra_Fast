@@ -4,71 +4,93 @@
 
 struct node
 {
-    int num;
-    struct node* next;
+	int num;
+	struct node* next;
 };
 
 
-struct node* create(int n) //生成循环链表
+struct node* CreateNode(int n)
 {
-    struct node* ptr,*head,*point;
-    point=ptr=head=NULL;
-    int i=10;
-    for(i=0;i<n;++i)
-    {
-        point=(struct node*)malloc(sizeof(struct node));
-	point->num=i;
-	if(i==0)
+	struct node* current,*previous,*head;
+	for(int m=0;m<n;m++)
 	{
-	    head=point;
+		current=(struct node*)malloc(sizeof(struct node));
+		current->num=m;
+		if(m==0)
+		{
+			head=current;
+		}
+		else
+		{
+			previous->next=current;
+		}
+	previous=current;
+	current->next=NULL;
+	}
+	current->next=head;
+	return head;
+}
+
+
+struct node* TraverseNode(struct node* head)
+{
+	struct node* point;
+	point=head;
+	do
+	{
+		printf("%d\t",point->num);
+		point=point->next;
+	}while(point!=head); //如果缺少current->next=head;这一条语句,那么point!=head这个循环条件则会导致point跑到单链表最后一个节点的再前一个位置,这个位置也符合point!=head,但是这个位置是未知的,然后在这个位置执行printf("%d\t",point->num);就会出现段错误,访问位置空间.
+	putchar(10);
+	return head;
+}
+
+
+
+
+
+
+
+
+struct node* InsertNode(struct node* head,struct node* p)
+{
+	struct node* point,*current,*previous;
+	point=head;
+	if(!head)
+	{
+		head=p;
+		p->next=head;
 	}
 	else
 	{
-	    ptr->next=point;
+		while(p->num > point->num && point->next!=head)
+		{
+			previous=point;	
+			point=point->next;
+		}
+		if(p->num < point->num )
+		{
+		    if( head == point )
+		    {
+			head=p;
+			p->next=point;
+		    }
+		    else
+		    {
+				previous->next=p;
+				p->next=point;
+		    }
+		}
+		else
+		{   
+			point->next=p;
+			p->next=head;
+		}
 	}
-	ptr=point;
-	point->next=NULL;
-    }
-
-    point->next=head; //让尾指针指向头节点，实现首尾相连的环形.
-    return head;
+	return head;
 }
 
-
-
-
-struct node* foreach(struct node* head) //遍历循环链表
-{
-    struct node* point;
-    point=head;
-    do
-    {
-	printf("%d\t",point->num);
-	point=point->next;
-    }while(point!=head);
-	putchar(10);
-    return head;
-}
-
-
-
-/*    插入节点到链表头部前面 */
-struct node* insert(struct node* old_link)
-{
-    struct node* current,*head;
-    struct node* new_point=(struct node*)malloc(sizeof(struct node));
-    new_point->num=103;
-    new_point->next=old_link;
-    current=head=old_link;
-
-    while(current->next != old_link)
-    {
-	current=current->next;
-    }; //因为是环形链表，使用while使当前节点跑到链表尾最后一个节点，然后让尾节点指向新插入的节点.
-
-    current->next=new_point;//让尾节点指向新节点
-    head=new_point;//头指针指向新节点
-}
+		    		
 
 
 
@@ -76,11 +98,12 @@ struct node* insert(struct node* old_link)
 
 int main()
 {
-    	struct node* p=create(10);
-	foreach(insert(p));
-
-
-    return 0;
+	//test(CreateNode(7));
+	//TraverseNode(CreateNode(7));
+	struct node* p=(struct node*)malloc(sizeof(struct node));
+	p->num=500;
+	struct node* k=InsertNode(CreateNode(9),p);
+	TraverseNode(k);
+	return 0;
 }
-
 

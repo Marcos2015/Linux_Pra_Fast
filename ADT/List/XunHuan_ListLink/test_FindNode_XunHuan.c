@@ -62,10 +62,40 @@ struct node* Traverse_LinkList(struct node* head)
 
 
 
+struct node* FindNode_LinkList(struct node* head,int i)
+{
+	struct node* point;
+	point=head;
+	int count=0;
+	while(point!=NULL)
+	{
+		count++;
+		if(point->num==i)
+		{
+			printf("%d,第%d个结点\n",i,count);
+			break;
+		}
+		else
+		{
+			point=point->next;
+			if(point==head)
+			{
+				printf("Not Found Point !\n");
+				break;
+			}
+		}
+	}
+
+	return head;
+}
+
+
+
+
 
 int main()
 {
-	Traverse_LinkList(Create_LinkList(8));
+	FindNode_LinkList(Traverse_LinkList(Create_LinkList(8)),2);
 	return 0;
 }
 

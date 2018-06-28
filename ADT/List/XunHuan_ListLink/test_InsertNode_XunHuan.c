@@ -52,7 +52,7 @@ putchar(10);
 
 
 
-struct node* insertnode(struct node* old_link)
+struct node* insertnode(struct node* old_link) //将节点插入到链表头结点之前
 {
 	struct node* current,*head;
 	struct node* p=(struct node*)malloc(sizeof(struct node));

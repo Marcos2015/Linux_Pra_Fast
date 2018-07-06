@@ -15,7 +15,7 @@ struct node* CreateNode(int n)
 	for(int m=0;m<n;m++)
 	{
 		current=(struct node*)malloc(sizeof(struct node));
-		current->num=m;
+		current->num=m+3;
 		if(m==0)
 		{
 			head=current;
@@ -56,24 +56,30 @@ struct node* InsertNode(struct node* head,struct node* p)
 {
 	struct node* point,*current,*previous;
 	point=head;
-	if(!head)
+	if(!head) //空链表
 	{
 		head=p;
 		p->next=head;
 	}
-	else
+	else //非空链表
 	{
 		while(p->num > point->num && point->next!=head)
 		{
 			previous=point;	
 			point=point->next;
 		}
-		if(p->num < point->num )
+		if(p->num < point->num ) //p是需要插入的结点
 		{
-		    if( head == point )
-		    {
-			head=p;
-			p->next=point;
+		    if( head == point ) //说明需要插入的结点p比第一个结点point还要小
+		    {                   //那么p就应该插入在第一个结点的前面
+			    struct node* p2=head; // 临时导入一个结点指针p2
+			    while(p2->next!=head)//将p2跑到链表的最后一个结点
+			    {
+				    p2=p2->next;
+			    }
+			head=p;//将需要插入的结点p设置为头结点.
+			p2->next=p;//将跑到最后一个结点的p2指向p结点(已将p设置为头结点)
+			p->next=point;//将需要插入的结点p链接指向原有的第一个结点point.
 		    }
 		    else
 		    {
@@ -101,7 +107,7 @@ int main()
 	//test(CreateNode(7));
 	//TraverseNode(CreateNode(7));
 	struct node* p=(struct node*)malloc(sizeof(struct node));
-	p->num=500;
+	p->num=-1;
 	struct node* k=InsertNode(CreateNode(9),p);
 	TraverseNode(k);
 	return 0;

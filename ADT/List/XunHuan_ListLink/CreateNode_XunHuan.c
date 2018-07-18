@@ -45,7 +45,8 @@ struct node* foreach(struct node* head) //遍历循环链表
     {
 	printf("%d\t",point->num);
 	point=point->next;
-    }while(point!=head);
+    }while(point!=head); //遍历一般都是使用do...while循环和point!=head判断条件,这样可使最后一个节点也打印出来.
+			//如果使用point->next!=head,则最后一个节点不会打印出来
 	putchar(10);
     return head;
 }

@@ -63,7 +63,7 @@ struct node* find_node(struct node* head,int i)//寻找循环链表的节点
     p=head;
     int count=0;
 
-    while(p!=NULL)
+    while(p!=NULL) //一般在寻找节点的时候都用p!=NULL这个条件
     {
 	count++;
 	if(p->num == i)
@@ -77,10 +77,12 @@ struct node* find_node(struct node* head,int i)//寻找循环链表的节点
 	    if(p->next==head)
 	    {
 		printf("Not Found the Point!\n");
-		p==NULL;
+		break;
 	    }
 	}
     }
+return p;
+}
 
 
     
@@ -113,15 +115,13 @@ struct node* find_node(struct node* head,int i)//寻找循环链表的节点
     }
 */
 
-    return p;
-}
 
 
 int main()
 {
     	struct node* p=create(10);
 	traverse(p);
-	find_node(p,5);
+	find_node(p,11);
 
     return 0;
 }

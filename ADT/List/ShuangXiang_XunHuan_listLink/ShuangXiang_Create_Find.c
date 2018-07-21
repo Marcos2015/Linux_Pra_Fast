@@ -89,7 +89,7 @@ struct node* Find_From_Head(struct node* head,int i)
 
 
 
-struct node* Find_No_Sort(struct node* head,int i) // 查找双向链表节点的通用算法
+struct node* Find_No_Sort(struct node* head,int i) // 查找无序双向链表节点的通用算法
 {
 	struct node* p=head;
 	while(p->next!=head)
@@ -176,6 +176,135 @@ struct node* Find_Is_Sort(struct node* head,int i)
 
 
 
+struct node*  Delete_From_Head(struct node* head,int i)
+{
+	 int bret=0;
+	if(head)  //非空链表
+	{
+	    struct node* p; //用于遍历
+	    struct node* current;//用于指向当前节点
+	    p=head;
+
+	    while(p->num!=i && p->next!=NULL)
+	    {
+		current=p;
+		p=p->next;
+	    }
+	    if(p->num==i)
+	    {
+		    if(p==head)
+		    {
+			    head=p->next;
+		    }
+		    else
+		    {
+			    current->next=p->next;
+			    p->next->previous=current;//若缺少这句,则后一个节点
+			                              //仍指向已被删除的节点.这一句
+						      //作用就是让被删除节点的前一
+						      //个节点的向后指针指向被删节点
+						      //的前一个节点.
+		    }
+		    free(p);
+		    bret=1;
+	    }
+	    }
+	return head;
+}
+
+
+
+
+
+struct node* left_traverse(struct node* head)//向左遍历
+{
+	struct node* p=head;
+
+
+	do
+	{
+		printf("%d\t",p->num);
+		p=p->previous;
+	}while(p!=head);
+	putchar(10);
+	return head;
+}
+
+
+	    
+
+
+
+
+struct node* del_is_sort(struct node* head,int i)
+{
+	if(head)
+	{
+		struct node* p,*current;
+		p=head;
+		while(p->num != i && p->next != head )
+		{
+			current=p;
+			if( i > p->num )
+			{
+				p=p->next;
+			}
+			else
+			{
+				p=p->previous;
+			}
+		}
+		if(p->num == i )
+		{
+			if(p==head)
+			{
+				head=p->next;
+			}
+			else
+			{
+				current->next=p->next;
+				p->next->previous=current;
+			}
+
+			free(p);
+		}
+			return head;
+	}
+}
+
+
+		
+
+struct node* del_no_sort(struct node* head,int i)  //无序双向循环链表删除
+{
+	struct node* current,*p;
+	p=head;
+	while(p->next!=head && p->num != i)
+	{
+		current=p;
+		p=p->next;
+	}
+
+	if(p->num == i)
+	{
+		printf("Find this point:%d\t ",p->num );
+		p->next->previous=current;
+		current->next=p->next;
+		putchar(10);
+	}
+	else
+	{
+	    printf("Not Find Point!\n");
+	}
+
+	free(p);
+
+
+return head;
+}
+
+
+
 
 
 
@@ -189,6 +318,15 @@ int main()
 //	Find_From_Head(k,9);
 	Find_No_Sort(k,90);
 //	Find_Is_Sort(k,19);
+	struct node* test=Delete_From_Head(k,3);
+	Traverse_ShuangXiang_ListLink(test);
+        left_traverse(test);	
+	struct node* del=del_is_sort(k,5);
+	left_traverse(del);
+
+	left_traverse(del_no_sort(k,9));
+
+
 	return 0;
 
 }

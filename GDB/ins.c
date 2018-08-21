@@ -60,8 +60,9 @@ void process_data()
 
 void print_result()
 	{
-		
-		for(int i=0;i<num_inputs;i++)
+	
+	    int i;
+		for(i=0;i<num_inputs;i++)
 		{
 			printf("%d\n",y[i]);
 		}
@@ -74,6 +75,7 @@ int main(int argc,char** argv)
 	get_args(argc,argv);
 	process_data();
 	print_result();
+	return 0;
 }
 
 

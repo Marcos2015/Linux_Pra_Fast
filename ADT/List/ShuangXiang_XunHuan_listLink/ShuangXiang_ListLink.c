@@ -268,8 +268,8 @@ struct node* del_is_sort(struct node* head,int i)
 
 			free(p);
 		}
-			return head;
 	}
+			return head;
 }
 
 
@@ -306,6 +306,94 @@ return head;
 
 
 
+struct node* insert_ShuangXiang_ListLink(struct node* head,struct node* p)
+{
+	struct node* current,*p1;
+	p1=head;
+	if(!head) //如果是空链表
+	{
+		head=p;
+		p->next=NULL;
+		p->previous=NULL;
+	}
+	else
+	{
+		if(p->num > p1->num)
+		{
+			while(p->num > p1->num && p1!=head )
+			{
+				current=p1;
+				p1=p1->next;
+			}
+			if(p->num < p1->num)//通过以上while循环可知道,无论如何,p1这个遍历节点都会在需要插入节点的右边. p1跑到p的位置发现p->num < p1->num(这是必然的)
+			{
+				if(p1==head) //如果遍历节点是头结点,那就说明需要插入的节点一开始就比head这个节点小,上面的while循环根本就没有运行
+				{
+				    head=p;
+				}
+
+				else
+				{   
+				    current->next=p;
+				 //   p->previous=current;
+				    p->next=p1;
+				   // p1->previous=p;
+				}
+			}
+			else //表示通过while循环后,需要插入的结点p大于遍历的节点p1; p->num > p1->num.把需要插入的节点插入到该链表的最后一个节点后面.
+			{
+				p1->next=p;
+				//p->previous=p1;
+				p->next=head;//通过之前的循环while,p1其实已经跑到双向循环链表的最后一个节点,但是发现仍小于p,那么就让p指向head节点,完成双向循环链接.
+			}
+		}
+		else  //if(p1->num > p->num )
+		{
+			while(p1->num > p ->num && p1->next!=head)
+			{
+				current=p;
+				p=p->previous;
+			}
+			if(p->num > p1->num )
+			{
+				if(head==p1)
+				{
+					head=p;
+				}
+				else
+				{
+				    current->previous=p;
+				    //p->next=current;
+				    p->previous=p1;
+				//p1->next=p;
+				}
+			}
+			else
+			{
+				p->next=p1;
+				//p->previous=NULL;
+				p1->previous=p;
+			}
+		}
+	}
+
+return head;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -325,6 +413,12 @@ int main()
 	left_traverse(del);
 
 	left_traverse(del_no_sort(k,9));
+
+	    struct node* l=(struct node*)malloc(sizeof(struct node));
+	    l->num=10;
+	    left_traverse(insert_ShuangXiang_ListLink(k,l));
+	Traverse_ShuangXiang_ListLink(insert_ShuangXiang_ListLink(k,l));
+	    
 
 
 	return 0;

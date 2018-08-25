@@ -395,18 +395,18 @@ int main()
 //	Find_From_Head(k,9);
 	Find_No_Sort(k,90);
 //	Find_Is_Sort(k,19);
-	struct node* test=Delete_From_Head(k,3);
+	struct node* test=Delete_From_Head(k,3);  //删除结点3
 	Traverse_ShuangXiang_ListLink(test);
         left_traverse(test);	
-	struct node* del=del_is_sort(k,5);
+	struct node* del=del_is_sort(k,5);        //删除结点5
 	left_traverse(del);
 
-	left_traverse(del_no_sort(k,9));
+	left_traverse(del_no_sort(k,9));          //删除结点9,但没有找到这个结点(本身不存在9这个结点)
 
 	    struct node* l=(struct node*)malloc(sizeof(struct node));
 	    l->num=10;
 	    left_traverse(insert_ShuangXiang_ListLink(k,l));
-	Traverse_ShuangXiang_ListLink(insert_ShuangXiang_ListLink(k,l));
+//	Traverse_ShuangXiang_ListLink(insert_ShuangXiang_ListLink(k,l));
 	    
 
 

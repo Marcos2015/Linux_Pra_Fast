@@ -18,7 +18,7 @@ void get_args(int ac,char **av)
 void scoot_over(int jj)
 {
 	int k;
-	for(k=num_y-1;k>jj;k++)
+	for(k=num_y;k>jj;k++)
 	{
 		y[k]=y[k-1];
 	}
@@ -58,15 +58,15 @@ void process_data()
 }
 
 
-void print_result()
-	{
+void print_results()
+{
 	
-	    int i;
+		int i;
 		for(i=0;i<num_inputs;i++)
 		{
 			printf("%d\n",y[i]);
 		}
-	}
+}
 
 
 
@@ -74,7 +74,7 @@ int main(int argc,char** argv)
 {
 	get_args(argc,argv);
 	process_data();
-	print_result();
+	print_results();
 	return 0;
 }
 

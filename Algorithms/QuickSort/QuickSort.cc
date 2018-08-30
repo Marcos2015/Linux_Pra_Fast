@@ -9,8 +9,8 @@ int Partition(int * p,int low,int high)
 
     while(i<j)
     {
-	while(i>j && p[j]>var) j--;
-	if(i>j)
+	while(i<j && p[j]>var) j--;
+	if(i<j)
 	{
 		int temp=p[i];
 		p[i]=p[j];
@@ -18,8 +18,8 @@ int Partition(int * p,int low,int high)
 		i++;
 	}
 
-	while(i>j && p[i]<=var) i++;
-	if(i>j)
+	while(i<j && p[i]<=var) i++;
+	if(i<j)
 	{
 	    int temp=p[j];
 	    p[j]=p[i];
@@ -35,10 +35,13 @@ return i;
 
 void QuickSort(int * p,int low,int high)
 {
-	int temp;
+    int temp;
+    if(low<high)
+    {
 	temp=Partition(p,low,high);
 	QuickSort(p,low,temp-1);
 	QuickSort(p,temp+1,high);
+    }
 }
 
 
@@ -47,11 +50,11 @@ int main()
 
 	int N;
         int world[10];
-	cout << "Please input Numbers for need :" << endl;
+	cout << "请输入多少位数需要排序?" << endl;
 	    cin >> N;
 
-	cout << "Please input you need Number:" << endl;
-	for(int i=0;i<N;i++)
+	cout << "请输入需要排序的数字"<< endl;
+	for(int i=0; i<N; i++)
 	{
 		cin >> world[i];
 	}
@@ -63,12 +66,14 @@ int main()
 		cout << world[i] <<"\t";
 	}
 
+	cout << endl;
 	cout << "输入结束" << endl;
-
+	cout << endl;
 
 	QuickSort(world,0,N-1);
 
-	for(int i=0;i<6;i++)
+
+	for(int i=0;i<N;i++)
 	{
 		cout << world[i] << endl;
 	}

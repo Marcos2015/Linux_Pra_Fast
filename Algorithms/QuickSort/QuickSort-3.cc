@@ -4,15 +4,15 @@ using namespace std;
 
 
 
-int Partition(int p[],int low,int high)
+void QuickSort(int p[],int low,int high)
 {
 	int i=low,j=high,Piovat=p[low];
 
 	while(i<j)
 	{
-		while(i<j)
+		while(i<j && p[j] > Piovat)
 		{
-			if(p[j]>Piovat) j--; //找到的元素是小于Piovat
+			j--; //找到的元素是小于Piovat
 		}
 		if(p[j]<Piovat)
 		{ 
@@ -24,9 +24,9 @@ int Partition(int p[],int low,int high)
 		}
 
 
-		while(i<j)
+		while(i<j && p[i]<=Piovat)
 		{
-			if(p[i]<=Piovat) i++;
+			i++;
 		}
 		if(p[i]>Piovat)
 		{
@@ -38,29 +38,33 @@ int Partition(int p[],int low,int high)
 		}
 	}
 
-return i;
-}
-
-
-
-void QuickSort(int *p,int low,int high)
-{
-	int temp;
 	if(low<high)
 	{
-		temp=Partition(p,low,high);
-		QuickSort(p,low,temp-1);
-		QuickSort(p,temp+1,high);
+		QuickSort(p,low,i-1);
+		QuickSort(p,i+1,high);
 	}
 
+
 }
+
+
+
 
 
 int main(int argc,char* argv[])
 {
 	int gui[10]={90,34,100,8,-1};
+	cout <<"排序前数组:"<<endl;
+	for(int i=0;i<5;i++)
+	{
+		cout << gui[i] <<"\t";
+	}
+	cout << endl;
+
 	QuickSort(gui,0,4);
-	for(int i=0;i<sizeof(gui)-1;i++)
+
+	cout << "排序后的数组:" << endl; 
+	for(int i=0;i<5;i++)
 	{
 		cout << gui[i] << "\t";
 	}

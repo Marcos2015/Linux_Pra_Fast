@@ -1,59 +1,56 @@
 #include <iostream>
 using namespace std;
 
-void quicksort(int r[],int low,int high)
+void QuickSort(int k[],int low,int high)
 {
+	int i=low,j=high,Piovat=k[low];
+
+	while(i<j)
+	{
+		
+		while(i<j && k[j] >Piovat ) j--;
+
+		if(i<j)
+		{
+			int temp;
+			temp=k[i];
+			k[i]=k[j];
+			k[j]=temp;
+		}
+
+
+
+
+		while(i<j && k[i]<=Piovat ) i++;
+		if(i<j)
+		{
+			int temp;
+			temp=k[i];
+			k[i]=k[j];
+			k[j]=temp;
+		}
+
+	}
 	if(low<high)
 	{
-		int pos,s,left,right;
-		s=r[low];
-		right=high;
-
-
-		while(left<right)
-		{
-			while(left<right && r[right] >= s )
-			{
-				--right;
-			}
-			r[left]=r[right];
-			while(left<right && r[left] <= s )
-			{
-				++left;
-			}
-			r[right]=r[left];
-		}
-		r[left]=s;
-		pos=left;
-
-		if(low<pos-1)
-		{
-			quicksort(r,low,pos-1);
-		}
-		if((pos+1)<high)
-		{
-			quicksort(r,pos+1,high);
-		}
+		QuickSort(k,low,i-1);
+		QuickSort(k,i+1,high);
 	}
+
 }
 
-
-void test_quicksort()
-{
-	int r[]={13,9,8,233,90};
-	quicksort(r,0,7);
-
-	for(int i=0;i<7;i++)
-	{
-		cout << r[i] << "\t";
-	}
-}
 
 
 int main()
 {
-	test_quicksort();
-	return 0;
+	int h[]={4,2,90,56};
+	QuickSort(h,0,3);
+
+	for(int i=0;i<4;i++)
+	{
+		cout << h[i] << endl;
+	}
+return 0;
 }
 
 

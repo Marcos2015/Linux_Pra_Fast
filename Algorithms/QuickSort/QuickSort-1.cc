@@ -1,4 +1,6 @@
 #include <iostream>
+//#include <algorithm>
+#include <utility>
 using namespace std;
 
 
@@ -12,19 +14,25 @@ int Partition(int * p,int low,int high)
 	while(i<j && p[j]>var) j--;
 	if(i<j)
 	{
+		swap(p[i++],p[j]); //C++11之前,swap函数定义在<algorithm>中,C++11之后,定义在<utility>.
+		/*
 		int temp=p[i];
 		p[i]=p[j];
 		p[j]=temp;
 		i++;
+		*/
 	}
 
 	while(i<j && p[i]<=var) i++;
 	if(i<j)
 	{
+		swap(p[i],p[j--]);
+	    /*
 	    int temp=p[j];
 	    p[j]=p[i];
 	    p[i]=temp;
 	    j--;
+	    */
 	}
     }
 

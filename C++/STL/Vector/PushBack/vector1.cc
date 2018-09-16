@@ -18,6 +18,10 @@ int main()
 				{
 					cout << *i << endl;
 				}
+
+
+				i=a.end()-1;
+				cout << *i << endl;
 return 0;
 }
 

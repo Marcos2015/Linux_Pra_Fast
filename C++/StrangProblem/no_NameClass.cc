@@ -28,8 +28,8 @@ class Y
 
 int main()
 {
-	Y H(J);
-	cout << J.get_jk() << endl;
+	//Y H(J);
+	cout << J.get_jk() << endl;//只要前面加上Y H(J)这行代码,那么J.get_jk()就会出现随机数,不加就没问题
 	//cout << H.get_jk() << endl;
 	return 0;
 }

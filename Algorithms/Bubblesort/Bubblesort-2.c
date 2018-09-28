@@ -33,8 +33,8 @@ return 0;
 int main()
 {
 	int Road[9]={19,4,80,20,9,2,56,45,67};
-
-	BubbleSort(Road,9);
+	int len=sizeof(Road)/sizeof(Road[0]);
+	BubbleSort(Road,len);
 
 return 0;
 }

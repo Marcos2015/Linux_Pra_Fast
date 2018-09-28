@@ -36,8 +36,9 @@ void InsertionSort(int r[],int n)
 int main()
 {
 	int fg[5]={34,10,89,40,4};
+	int len=sizeof(fg)/sizeof(fg[0]);
 
-	InsertionSort(fg,5);
+	InsertionSort(fg,len);
 
 
 	for(int i=0;i<5;i++)

@@ -14,14 +14,9 @@ int main()
 		a.push_back(5);
 
 
-				for(i=a.begin(); i != a.end();i++)
-				{
-					cout << *i << endl;
-				}
+		for(i=a.begin(); i != a.end();cout << *i << "\t",i++);
 
-
-				i=a.end()-1;
-				cout << *i << endl;
+		putchar(10);
 return 0;
 }
 

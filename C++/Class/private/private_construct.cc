@@ -5,12 +5,10 @@ using namespace std;
 class Test_construct
 {
 	private:
-		Test_construct();
+		Test_construct(){};
 		static Test_construct* gpg;
 
 	public:
-		
-		static int k;
 		static Test_construct* single()
 		{
 			if(!gpg)
@@ -28,20 +26,14 @@ class Test_construct
 
 };
 
-int k=100;
 Test_construct* Test_construct::gpg=NULL;
-void sofun()
-{
-
-	Test_construct::single();
-};
 
 
 
 int main()
 {
-	Test_construct* T=Test_construct::single();
-	cout << Test_construct::k << endl;
+	
+	Test_construct::single();
 	return 0;
 }
 

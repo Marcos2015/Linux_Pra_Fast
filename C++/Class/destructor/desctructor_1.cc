@@ -11,6 +11,11 @@ class A
 		cout << "x=" << x << endl;
 	}
 
+	~A()
+	{
+		cout << "Use destory" << endl;
+	}
+
 
 	
 

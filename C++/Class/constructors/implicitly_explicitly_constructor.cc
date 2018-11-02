@@ -20,8 +20,8 @@ class test
 
 int main()
 {
-	test test_1;
-	test test_2=test();
+	test test_1(30);
+	test test_2=test(8);
 return 0;
 }
 

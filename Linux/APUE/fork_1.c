@@ -27,6 +27,8 @@ int main()
 
 	}
 
+	printf("hhh\n");
+
 
 	while(k>0)
 	{
@@ -34,6 +36,7 @@ int main()
 		sleep(2);
 		k--;
 	}
+
 
 }
 

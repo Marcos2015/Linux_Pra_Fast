@@ -2,9 +2,7 @@
 #include <sys/types.h>
 #include <signal.h>
 #include <stdlib.h>
-//#include <iostream>
 #include <unistd.h>
-//using namespace std;
 
 
 int main()

@@ -1,6 +1,6 @@
 #! /bin/bash
 
-echo "The script name is : $0"
+echo "The script name is : `basename $0` 
 echo "The Parameter #1: $1"
 echo "The Parameter #2: $2"
 echo "The Parameter #3: $3"

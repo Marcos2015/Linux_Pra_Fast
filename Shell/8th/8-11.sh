@@ -2,10 +2,10 @@
 
 sum=0
 
-for i in {1..100..2}
+for(( i=0 ; i<1000 ; i=i+2 ))
 do
 	let "sum+=i"
 done
 
-echo "sum=$sum"
+echo "$sum"
 

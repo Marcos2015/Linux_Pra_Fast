@@ -11,7 +11,7 @@ do
 	then 
 		echo "Too small.Try again!"
 		read num
-	elif [ "$num" -gt 4 ]
+	elif [ "$num" -gt 4 ] #这里不可以是else,否则报错。必须是elif,因为不能和下面的else组成连续两个else，语法错误
  	then	
 		echo "To high.Try again"
 		read num

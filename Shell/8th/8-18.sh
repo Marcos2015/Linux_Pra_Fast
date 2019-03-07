@@ -11,8 +11,8 @@ do
 	then 
 		echo "Too small.Try again!"
 		read num
-	else [ "$num" -gt 4 ]
-	then 
+	elif [ "$num" -gt 4 ]
+ 	then	
 		echo "To high.Try again"
 		read num
 	else

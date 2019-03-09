@@ -7,3 +7,5 @@ do
 	break
 done
 
+echo "You select colore is:$color"
+

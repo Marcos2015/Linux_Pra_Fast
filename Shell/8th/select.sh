@@ -1,7 +1,7 @@
 #! /bin/sh
 
 PS3="Please select a number: "
-select name in zhangsan lisi wangwu zhaoliu
+select name in zhangsan lisi wangwu zhaoliu #select是一个无限循环，所以一般需要有一个break终止
 do
     case $name in
     zhangsan)

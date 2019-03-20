@@ -1,0 +1,10 @@
+|| cc     7.c   -o 7
+7.c|6 col 2| warning: implicitly declaring library function 'rintf' with type 'float (float)' [-Wimplicit-function-declaration]
+||         rintf("please input a number:\n");
+||         ^
+7.c|6 col 2| note: include the header <math.h> or explicitly provide a declaration for 'rintf'
+7.c|6 col 8| error: passing 'char [24]' to parameter of incompatible type 'float'
+||         rintf("please input a number:\n");
+||               ^~~~~~~~~~~~~~~~~~~~~~~~~~
+|| 1 warning and 1 error generated.
+|| make: *** [7] Error 1

@@ -1,0 +1,9 @@
+{
+  "title": "C++头文件保护符",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<pre id=\"best-content-1498316621\" accuse=\"aContent\" class=\"best-text mb-10\" style=\"font-size: 14px; margin-top: 0px; margin-bottom: 10px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace; color: rgb(51, 51, 51); line-height: 24px;\">C++中，一般我们会为了防止头文件被包含多次，都会在每个头文件中写与如下类似的代码： <br><br>#ifndef A_H <br>#define A_H <br>......//头文件内容 <br>#endif<br> <br>头文件第一次被包含时，因为没有宏定义过“A_H”，因此经过语句<br>“<br>#ifndef A_H <br>#define A_H<br>”<br>并得到执行后，“A_H”就被定义了，并且头文件的内容会进入编译，直到遇见“#endif”。<br> <br>而一旦该头文件即将被错误地包含第二次时，与语句“#ifndef A_H”不符，因为第一次你已经定义过“A_H”了，所以“#ifndef A_H”之后的语句不会进入编译了，直到遇见“#endif”。<br> <br>若头文件被包含一次以上，编译时都会报错。C++头文件保护符的目的就是避免这类错误。</pre>"
+    }
+  ]
+}

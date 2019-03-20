@@ -1,0 +1,9 @@
+{
+  "title": "VirtualBox 鼠标无法离开,安装增强包出现:Building the main Guest Additions module",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\">解决办法:</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">1.yum update</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">2.yum install gcc</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">3.yum install kernel-devel</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">4.reboot</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">5.进入增强包文件夹，执行：</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">sh &nbsp;./VBoxLinuxAdditions.run</div>"
+    }
+  ]
+}

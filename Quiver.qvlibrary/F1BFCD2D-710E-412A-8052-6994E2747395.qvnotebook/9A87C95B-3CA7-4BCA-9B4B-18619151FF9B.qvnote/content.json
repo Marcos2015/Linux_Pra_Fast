@@ -1,0 +1,9 @@
+{
+  "title": "为什么只有 Linux 内核获得成功",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-size: 14px; font-family: Verdana, sans-serif, 宋体; line-height: 22px;\">过去几十年涌现了许多类Unix内核，除了Linux内核外，我们所知道的类Unix内核还有GNU HURD、BSD、微软授权开发的Unix版本Xenix、学术性的Unix克隆Mini，以及Unix本身。但为什么</span><a target=\"_blank\" href=\"http://thevarguy.com/open-source-application-software-companies/050415/open-source-history-why-did-linux-succeed\" style=\"font-size: 14px; font-family: Verdana, sans-serif, 宋体; line-height: 22px; margin: 0px; padding: 0px; color: rgb(62, 98, 166); outline: 0px;\">只有Linux内核最终取得成功</a><span style=\"color: rgb(0, 0, 0); font-size: 14px; font-family: Verdana, sans-serif, 宋体; line-height: 22px;\">？这是自由开源软件领域中一个令人不解的谜团。</span><p style=\"color: rgb(0, 0, 0); font-size: 14px; margin: 0px 0px 15pt; padding: 0px; font-family: Verdana, sans-serif, 宋体; line-height: 22px;\">ESR（Eric S. Raymond）的一个观点是Linux采用了去中心化的开发模式，而GNU HURD失败的原因之一是开发方法过于集中化，但这一观点有缺陷，Linux作者在引导Linux开发上起着至关重要的作用。</p><p style=\"color: rgb(0, 0, 0); font-size: 14px; margin: 0px 0px 15pt; padding: 0px; font-family: Verdana, sans-serif, 宋体; line-height: 22px;\">另一个观点是Linux是实用主义，而GNU过于理想主义，但为什么理想主义的GNU开发出了许多成功的自由软件？</p><p style=\"color: rgb(0, 0, 0); font-size: 14px; margin: 0px 0px 15pt; padding: 0px; font-family: Verdana, sans-serif, 宋体; line-height: 22px;\">第三种观点是Linux在操作系统设计上比Unix更优越，RMS（Richard Stallman）曾指出GNU HURD没有成功的部分理由是它的基本设计更像是一个研究项目。第四个观点是社区选择支持Linux。</p>"
+    }
+  ]
+}

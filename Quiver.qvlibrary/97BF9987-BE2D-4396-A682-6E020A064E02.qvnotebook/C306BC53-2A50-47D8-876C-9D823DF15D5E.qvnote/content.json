@@ -1,0 +1,9 @@
+{
+  "title": "VI操作--跳到最后一行和vi加密",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">Vi 跳到文件第一行、最后一行</p><pre style=\"color: rgb(0, 0, 0); font-size: 14px;\">:$&nbsp;跳到文件最后一行:0或:1&nbsp;跳到文件第一行</pre><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">或 另外一组命令：</p><pre style=\"color: rgb(0, 0, 0); font-size: 14px;\"><span style=\"color: rgb(255, 0, 0);\">gg&nbsp;跳到文件第一行<br>Shift&nbsp;+&nbsp;g&nbsp;跳到文件最后一行<br></span><span style=\"color: rgb(0, 0, 255);\">vi加密。进入vi，输入\":\" &nbsp;+ \"X\" 之后就提示你输入两次密码。之后:wq 保存退出。再次进入时就提示你输入密码了。如果你不想要密码了，就:X 提示你输入密码时连续按两次回车，就搞定了。</span><br></pre><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">VI全称Visual Identity， 即企\\业VI视觉设计，通译为视觉识别系统。是将CI的非可视内容转化为静态的视觉识别符号。</p>"
+    }
+  ]
+}

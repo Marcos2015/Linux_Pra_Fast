@@ -1,0 +1,9 @@
+{
+  "title": "llvm和gcc有什么区别",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); line-height: 1.7; font-size: 14px; font-family: arial;\"><span style=\"font-family: 宋体; line-height: 24px;\">llvm是一个底层虚拟机平台，提供了经过最佳化的IF代码，也就是有个中间层，在这个中间层可以做很多的事情，比如优化和提供给编译器更多的信息，理论上可以支持几乎任何编程语言。llvm默认的前端是clang，当然也可以用gcc做前端。</span><br style=\"font-family: 宋体; line-height: 24px;\"><span style=\"font-family: 宋体; line-height: 24px;\">llvm用c++写的，模块化做的很好，因此可以很好的和clang，gcc等等更多的东西合作，能为ide提供更全的有用信息。而gcc则包含的比较全面，整一个是一个宏结构，没有模块化设计，用c写的，对ide也不太友好(实际上linux社区里似乎对ide一直不感冒)。不过c++版的gcc正在重写中，为了与llvm/clang更好的竞争，而且gcc从5.0开始打算进行模块化设计，所以，以后gcc内部可能会分出很多部分。</span><br style=\"font-family: 宋体; line-height: 24px;\"><span style=\"font-family: 宋体; line-height: 24px;\">就现在来看，gcc大体等同于llvm+clang所提供的功能。</span><br style=\"font-family: 宋体; line-height: 24px;\"><span style=\"font-family: 宋体; line-height: 24px;\">很多人特别羡慕clang那强大的错误诊断信息，其实gcc4.8部分信息诊断能力已经超过它了，比它更准确，所以竞争真的很好，我们可以用到好的东西了。gcc目前的问题就是缺乏模块化设计，这是暂时落后于llvm的地方。</span><br style=\"font-family: 宋体; line-height: 24px;\"><span style=\"font-family: 宋体; line-height: 24px;\">freebsd不用gcc是因为gpl协议，llvm/clang的协议更加自由，但llvm/clang目前的兼容性和参数优化等等方面和gcc还有不小差距，虽然编译后的体积更小了(架构领先优势)，但在性能优化方面相比gcc还有很多事情要做。</span></div>"
+    }
+  ]
+}

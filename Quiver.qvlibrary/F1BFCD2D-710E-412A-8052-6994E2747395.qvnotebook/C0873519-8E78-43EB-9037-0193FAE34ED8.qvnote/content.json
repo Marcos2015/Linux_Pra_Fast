@@ -1,0 +1,9 @@
+{
+  "title": "CentOS7.0下面的PATH路径",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">直接在终端输入一下命令：可令vi(/usr/bin/vi)添加到path路径下</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">PATH=/usr/local/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/bin:/sbin</span>"
+    }
+  ]
+}

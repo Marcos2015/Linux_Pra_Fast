@@ -1,0 +1,9 @@
+{
+  "title": "在CentOS 7 启动,停止nginx",
+  "cells": [
+    {
+      "type": "text",
+      "data": "启动:/usr/sbin/nginx 或者: systemctl start nginx &nbsp; &nbsp;Mac: /usr/local/bin/nginx (brew 安装)<div>查看: ps -ef | grep nginx</div><div>查看nginx在哪里:whereis nginx &nbsp;(Mac:where nginx)</div>"
+    }
+  ]
+}

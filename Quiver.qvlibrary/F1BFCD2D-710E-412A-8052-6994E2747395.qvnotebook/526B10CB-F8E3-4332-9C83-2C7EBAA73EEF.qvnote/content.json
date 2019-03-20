@@ -1,0 +1,9 @@
+{
+  "title": "“源代码包”和“二进制包”的疑问",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div class=\"Blog_wz1\" style=\"word-wrap: break-word; font-size: 16px;\"><font id=\"zoom\" class=\"f14\" style=\"word-wrap: break-word;\">源代码方式和二进制包是软件包的两种形式。二进制包里面包括了已经经过编译，可以马上运行的程 序。你只需要下载和解包（安装）它们以后，就马上可以使用。源代码包里面包括了程序原始的程序代码，需要在你的计算机上进行编译以后才可以产生可以运行程 序,所以从源代码安装的时间会比较长。<br style=\"word-wrap: break-word;\"><br style=\"word-wrap: break-word;\"></font><font id=\"zoom\" class=\"f14\" style=\"word-wrap: break-word;\">source&nbsp;code&nbsp;是程序員寫的碼， binary&nbsp;code&nbsp;是機器跑的碼。 source&nbsp;code&nbsp;得經過&nbsp;compile&nbsp;才能成為&nbsp;binary&nbsp;code&nbsp;。&nbsp;<br style=\"word-wrap: break-word;\"><br style=\"word-wrap: break-word;\">RPM&nbsp;有分兩種：binary&nbsp;rpm&nbsp;跟&nbsp;source&nbsp;rpm&nbsp;。&nbsp;<br style=\"word-wrap: break-word;\">前者是編好的&nbsp;binary&nbsp;，安裝就可用。&nbsp;<br style=\"word-wrap: break-word;\">後者是還沒編好的&nbsp;source&nbsp;，需&nbsp;rebuild&nbsp;之後才能安裝。</font><br style=\"word-wrap: break-word;\"><br style=\"word-wrap: break-word;\">rpm格式很好区分，二进制格式的包名字很长，都带有版本号、适应平台、适应的硬件类型等，而源码格式仅仅就是一个版本号的tar包。<br style=\"word-wrap: break-word;\">mysql-5.0.45.tar.gz 是 源码包&nbsp; &nbsp; 像这样的 mysql-5.0.45-linux-x86_64-glibc23.tar.gz&nbsp; &nbsp;是二进制包<br style=\"word-wrap: break-word;\"><br style=\"word-wrap: break-word;\">如果你用过压缩工具就会明白，压缩包未必就是软件，它也可能是备份的许多图片，也可能是打包在一起的普通资料，要分辨它到底是什么最好的办法就是查看包里的文件清单，使用命令tar ztvf *. 或者tar ytvf *.bz2<br style=\"word-wrap: break-word;\"><br style=\"word-wrap: break-word;\">源代码包里的文件往往会含有种种源代码文件，头文件*.h、c代码源文件*.c、C++代码源文件*.cc/*.cpp等；而二进制包里的文件则会有可执行文件（与软件同名的往往是主执行文件），标志是其所在路径含有名为bin的目录（仅有少数例外）</div><div class=\"Blog_wz1\" style=\"word-wrap: break-word; font-size: 16px;\"><br></div>"
+    }
+  ]
+}

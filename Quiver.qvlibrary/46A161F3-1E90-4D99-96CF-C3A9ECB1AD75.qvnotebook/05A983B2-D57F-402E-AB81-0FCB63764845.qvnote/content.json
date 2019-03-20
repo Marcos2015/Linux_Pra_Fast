@@ -1,0 +1,9 @@
+{
+  "title": "Mac上设置iTerm2可以显示和输入中文",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div class=\"article_title\" style=\"color: rgb(0, 0, 0); margin: 5px 0px; font-size: 20px; line-height: 30px; font-family: 'Microsoft YaHei';\"><span style=\"font-size: 24px;\">修改前iTerm2是无法显示中文的</span><br></div><div id=\"article_content\" class=\"article_content\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px; margin: 20px 0px 0px; line-height: 26px;\"><span style=\"font-size: 13px;\"></span><img src=\"quiver-image-url/E8DD078A4D7C6F824439EAD056F5F3DB.jpg\" alt=\"\" style=\"border: none;\" width=\"959\" height=\"364\"><br><span style=\"font-size: 24px; font-family: 'Microsoft YaHei';\">当然也无法输入中文</span><br><span style=\"font-size: 13px;\"></span><img src=\"quiver-image-url/D4A954E8A7C3A3973308485C9A989F2C.jpg\" alt=\"\" style=\"border: none;\" width=\"747\" height=\"64\"><br><span style=\"font-size: 24px; font-family: 'Microsoft YaHei';\">iTerm2 -- Preferences -- Terminal -- Terminal Emulation -- Character Encoding修改为 Unicode (UTF-8)</span><br><span style=\"font-size: 13px;\"></span><img src=\"quiver-image-url/9553C34FA57293136F621C3851461DA0.jpg\" alt=\"\" style=\"border: none;\" width=\"924\" height=\"541\"><br><span style=\"font-size: 24px; font-family: 'Microsoft YaHei';\">然后重新打开一个iTerm,查看中文</span><br><span style=\"font-size: 13px;\"></span><img src=\"quiver-image-url/1D51D253EEE14C3183E1E77B5F291EE1.jpg\" alt=\"\" style=\"border: none;\" width=\"824\" height=\"158\"><br><p style=\"margin: 0px; padding: 0px;\"><span style=\"font-size: 24px; font-family: 'Microsoft YaHei';\">输入中文试试看</span></p></div>"
+    }
+  ]
+}

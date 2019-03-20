@@ -1,0 +1,9 @@
+{
+  "title": "自己设计通信协议",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 18px;\">要解决的重点在于<br></span><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 18px;\"><strong>1 防止发送的消息丢失<br></strong>（1）接收方收到则<u>应答<br></u>（2）发送发发送后，过一段时间未收到应答，则<u>重发</u>；重发多次仍无应答，则退出<br></span><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 18px;\"><strong>2 防止应答丢失<br></strong>（1）应答丢失，则发送方会重发。接收方需判断收到的消息是否<u>重复</u>（帧中加入序列号）<br></span><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 18px;\"><strong>3 身份确认<br></strong>（1）用地址确认身份<br></span><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 18px;\"><strong>4 传递效率<br></strong>（1）限制每条消息的大小</span>"
+    }
+  ]
+}

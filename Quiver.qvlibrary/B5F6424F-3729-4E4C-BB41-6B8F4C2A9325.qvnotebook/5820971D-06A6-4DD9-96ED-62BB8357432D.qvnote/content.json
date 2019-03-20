@@ -1,0 +1,9 @@
+{
+  "title": "DockOne技术沙龙有感：向高焕堂老师致敬",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div class=\"mod-body\" style=\"font-size: 14px; box-sizing: border-box; color: rgb(102, 102, 102); font-family: 'Helvetica Neue', STHeiti, 'Microsoft YaHei', Helvetica, Arial, sans-serif; line-height: 22.399999618530273px;\"><div class=\"content markitup-box\" style=\"box-sizing: border-box; position: relative; z-index: 1; line-height: 25.200000762939453px; padding: 10px 0px; word-wrap: break-word !important;\">昨天在DockOne的技术沙龙中，有幸听了高焕堂老师的演讲。对高老师PPT里面提到的一些名词非常感兴趣。<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">比如“容易”，复杂的事情包装起来管理，就变得简单了。容器、虚机一直都是很偏技术的人才能用。有了docker，不止是我们技术人员可以用了，普通人就可以。只要有个支持docker的环境，谁都会输一个run不是，这样就获取到自己需要的服务了，当然图形界面就更佳了，不过都是一个run 的动作了，对于开发图形界面也很友好。<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">我觉得大家，还把docker当做一个运维工具，部署工具就\"out\"了，以为“容易”了，所以docker改变的可能会更多。<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">乱中有序，序中有乱。对我启发也很大，中国人确实喜欢去总结，我们做一个产品的时候，总是先收集足够的信息，从乱中找到序，当时乱就是乱，想找到序，是很难的。需要一个相对漫长的过程。没有先制作出能容纳所有乱的序，才是最大的问题。<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">我碰到过很多，抱怨中国的用户就是喜欢定制化的问题。这确实是一个问题，不过更大的问题是，我们制作工具的人，制作的工具的序不够大，没能包容所有的乱，不是吗？思考问题的方式不同，所以开始搭建的东西就不一样了。<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">找到更大的序，足够容纳所有乱的序，多换个角度想一想，或许，我们就有了不同的产品出来。<br style=\"box-sizing: border-box;\"><br style=\"box-sizing: border-box;\">希望大家一起来讨论，我觉得有的时候应该跳出编码和运维，想一些更本质的东西。</div></div>"
+    }
+  ]
+}

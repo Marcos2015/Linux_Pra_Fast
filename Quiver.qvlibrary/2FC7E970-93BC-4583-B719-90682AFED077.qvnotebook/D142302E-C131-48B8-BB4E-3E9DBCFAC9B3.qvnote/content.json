@@ -1,0 +1,9 @@
+{
+  "title": "请高手简洁明了的介绍下C++里仿函数的用法。",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div class=\"wgt-ask accuse-response line mod-shadow\" id=\"wgt-ask\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><h1><span style=\"color: rgb(0, 0, 0); font-size: 14px; font-family: -apple-system, Helvetica, Arial, sans-serif;\">简单说就是语法上和函数一样，用起来也跟函数一样，但是它不是函数。</span><br></h1></div><pre id=\"best-content-1327223072\" class=\"best-text mb-10\" style=\"color: rgb(0, 0, 0); font-size: 14px; min-height: 55px;\">比如<br>int add(int a, int b) { return a + b; }<br>你也可以<br>struct Add { int operator()(int a, int b) { return a + b; } };<br>之后就可以声明一个这个类实例：<br>Add add;<br>然后就和上面那个add一样用了：<br>int x = add(1, 2);<br><br>好处是里面可以带有一些自己的状态。<br>传统情况下一个函数要有状态，就是里面用static声明变量，不然就只能送一个结构体指针进来，在那个结构体里保存状态。但是现在，因为它不是函数了，它是对象，对象可以有成员变量，于是这些成员变量就用来保存状态。<br><br>比如你一个仿函数，目的是给参数加上一个固定的数然后返回：<br>struct Add { int x; Add(int p) { x = p; } int operator()(int a) { return a + x; } };<br>然后声明一个对象<br>Add add(5);<br>之后就可以<br>int x = add(2);<br><br>想想看如果是让你写一个函数实现这功能，怎么办……要用add(2)这样的语法调用，而且还要让它加的是5而不是其他什么数字，写不出来吧……</pre>"
+    }
+  ]
+}

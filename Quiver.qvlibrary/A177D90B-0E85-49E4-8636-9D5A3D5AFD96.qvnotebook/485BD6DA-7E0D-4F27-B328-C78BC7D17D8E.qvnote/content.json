@@ -1,0 +1,9 @@
+{
+  "title": "linux error 2003 can't connect to mysql server on localhost.localdomin",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">vi打开&nbsp; ~/.my.cnf</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">修改主机名</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"font-family: Arial; font-size: 14px; color: rgb(255, 0, 0);\">host = localhost</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">即可</span>"
+    }
+  ]
+}

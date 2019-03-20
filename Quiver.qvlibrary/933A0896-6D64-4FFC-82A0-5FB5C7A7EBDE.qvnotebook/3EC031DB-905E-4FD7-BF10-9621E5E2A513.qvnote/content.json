@@ -1,0 +1,9 @@
+{
+  "title": "Mac PATH路径被改错，永久修复的方法(修改~/.bashrc)",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">先输入以下命令，使当前终端窗口有效：</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(255, 0, 0);\">export PATH=/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/bin:/usr/X11/bin:/a.out/bin:</span></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(255, 0, 0);\"><br></span></div><div id=\"isForwardContent\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><div style=\"line-height: 1.7; color: rgb(0, 0, 0);\">然后&nbsp;<span style=\"line-height: 26px;\">vi ~/.bashrc</span><p style=\"margin: 0px; padding: 0px; line-height: 26px;\">在最后一行下面添加：</p><p style=\"margin: 0px; padding: 0px; line-height: 26px;\"><span style=\"font-size: 18px;\">export PATH=$PATH:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/bin:/usr/X11/bin:/a.out/bin:</span></p></div></div>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "gcc -m64 -m32 寄存器",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">gcc提供了参数可以为特定架构生成汇编代码，比如 linux和OS X下&nbsp;</span><b style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">-m32</b><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">&nbsp;生成32位机器的汇编代码，而</span><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><b>-m64</b>则生成64位机器汇编代码。</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br></div><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">由于64位机器的寄存器比32位机器多很多，所以</span><b style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">GCC编译器会尽量使用寄存器来传递参数</b><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">，而不是32位机器下的压栈</span>"
+    }
+  ]
+}

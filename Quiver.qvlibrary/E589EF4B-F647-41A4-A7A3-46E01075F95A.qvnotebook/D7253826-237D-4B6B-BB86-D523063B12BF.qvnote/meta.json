@@ -1,0 +1,9 @@
+{
+  "created_at" : 1509108147,
+  "tags" : [
+
+  ],
+  "title" : "运行yum,系统提示Existing lock \/var\/run\/yum.pid: another copy is running as pid",
+  "updated_at" : 1509108167,
+  "uuid" : "D7253826-237D-4B6B-BB86-D523063B12BF"
+}

@@ -1,0 +1,9 @@
+{
+  "title": "C++入门方法步骤",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\">第一步: c++入门的书籍看一看,同时将自己有问题的地方随时记下来,方便上机实现</span><br style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\"><span style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\">第二步:全面学习阶段,C++ Primer ,等一系列知名度很高的书籍.先看中文,后看外文.实验方法同步骤1</span><br style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\"><span style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\">第三步:学习C++的数据结构方面的书籍,学一门语言不去用相应的数据结构来打磨,就不知道这门语言能做什么,不能做什么.最好是国外的数据结构书籍翻译过来的,上面有很多中等难度的实验可以一边学习算法,一边学习C++语言,同时掌握解决问题的思路和方法.</span><br style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\"><span style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\">第四步:学习STL,比如Effective STL .C的灵魂在于指针,C++的内涵在于建立于STL之上的设计思想.这是现代C++所极力推崇的.</span><br style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\"><span style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: Arial; line-height: 26px;\">第五步:用C++结合界面程序做一个中等的项目例如中国象棋,聊天软件,等.这样就能走向合格的初等程序员了.</span>"
+    }
+  ]
+}

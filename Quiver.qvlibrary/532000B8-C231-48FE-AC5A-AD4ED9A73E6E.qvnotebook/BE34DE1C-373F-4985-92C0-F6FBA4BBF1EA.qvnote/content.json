@@ -1,0 +1,9 @@
+{
+  "title": "brew 安装gdb",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<font size=\"5\" style=\"line-height: 42px; color: rgb(185, 160, 148); font-family: 'Hiragino Sans GB W3', 'Hiragino Sans GB', Arial, Helvetica, simsun, u5b8bu4f53;\">安装gdb：<br style=\"font-family: Arial;\"></font><span style=\"font-family: Arial; line-height: 42px; color: rgb(185, 160, 148); font-size: x-large; background-color: rgb(255, 0, 0);\">sudo</span><span style=\"font-family: Arial; line-height: 42px; color: rgb(185, 160, 148); font-size: x-large;\">&nbsp;brew install gdb &nbsp;</span><br style=\"font-family: Arial; font-size: 14px; line-height: 26px; color: rgb(185, 160, 148);\"><span style=\"color: rgb(185, 160, 148); font-family: 'Hiragino Sans GB W3', 'Hiragino Sans GB', Arial, Helvetica, simsun, u5b8bu4f53; font-size: 16px; line-height: 28px;\">或者&nbsp;</span><font size=\"3\" style=\"line-height: 28px; color: rgb(185, 160, 148); font-family: 'Hiragino Sans GB W3', 'Hiragino Sans GB', Arial, Helvetica, simsun, u5b8bu4f53;\"><span style=\"background-color: rgb(255, 0, 0);\">sudo</span>&nbsp;<span style=\"line-height: 21px; font-family: Consolas, 'Liberation Mono', Courier, monospace; color: rgb(51, 51, 51); white-space: pre-wrap;\">brew install <a href=\"https://raw.github.com/Homebrew/homebrew-dupes/master/gdb.rb\">https://raw.github.com/Homebrew/homebrew-dupes/master/gdb.rb</a></span></font>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "Vimrc配置",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"margin: 10px auto; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\"><strong>（1）~/.viminfo</strong>　　</p><p style=\"margin: 10px auto; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\">　　在vim中操作的行为，vim会自动记录下来，保存在 ~/.viminfo 文件中。这样为了方便下次处理，如：vim打开文件时，光标会自动在上次离开的位置显示。原来搜索过的字符串，新打开文件时自动高亮显示。<strong>~/.viminfo 文件是系统自动生成。</strong></p><p style=\"margin: 10px auto; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\"><strong>(2)/etc/vimrc</strong></p><p style=\"margin: 10px auto; color: rgb(0, 0, 0); font-family: Verdana, Arial, Helvetica, sans-serif; font-size: 14px; font-variant-ligatures: normal; orphans: 2; widows: 2; background-color: rgb(255, 255, 255);\">　　vimrc文件是vim的环境设置文件。整体的vim的设置是在 /etc/vimrc 文件中。<strong>不建议修改/etc/vimrc 文件</strong>，每个用户可以在用户根目录中设置vim，新建 ~/.vimrc. vim的配置选项较多。</p>"
+    }
+  ]
+}

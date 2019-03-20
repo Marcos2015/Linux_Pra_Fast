@@ -1,0 +1,9 @@
+{
+  "title": "搭建属于自己Sublime Python开发环境",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">搭建属于自己Sublime Python开发环境<br><a href=\"http://group.jobbole.com/10568/?utm_source=blog.jobbole.com&amp;utm_medium=sidebar-group-topic\">http://group.jobbole.com/10568/?utm_source=blog.jobbole.com&amp;utm_medium=sidebar-group-topic</a><br></div><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">11/04• coco •1 评论 • Python , sublime</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">之前在pycharm上写python，比较占资源，对于简单的小项目完全可以在sublime这个轻量级的开发工具上进行，可以按照下面的步骤搭建：</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">官网下载sublime3，安装好python环境</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">安装Package Control,这是sublime的包管理器，可以利用这个工具管理安装插件</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">安装完成之后，按住Ctrl+Shift+P，会出现Package Control的命令板，输入install package进行安装包，在这里可以安装autoPeP8，这可以帮你进行格式化排版</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">安装SublimeREPL，用这个工具你可以使用PDb命令进行断点等的调试运行。</span><br style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">当然还可以安装主题等其他各种包，你在用这个的时候是怎么搭建的？</span>"
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+{
+  "title": "修改 Mac 的 MAC 地址",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(0, 0, 0); font-family: 'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti; font-size: 16px;\">&nbsp;以前在学校下载电影 IP 老是被封，后来进化到管理员封物理网卡地址(MAC)，每隔一段时间就得换个 MAC 地址。听说苹果在最新将要发布的 iOS 8 上增加了 MAC 地址随机化功能，也就是说在扫描 Wi-Fi 的时候会随机生成 MAC 地址，扫描完成后才会给出真实 MAC 地址，这个功能可以更好的保护用户的隐私和安全，据说一些营销和数据分析公司会通过免费的 Wi-Fi 收集信息，这点信息也不放过实在可恶，所以在外面用公共的 Wi-Fi 最好加一层 VPN 后再用。</span><p style=\"color: rgb(0, 0, 0); font-family: 'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti; font-size: 16px;\">&nbsp; &nbsp;假设在 Mac 上通过 ifconfig 查到 Wi-Fi 网卡接口是 en0，更换一个随机的 MAC 地址一句话就可以搞定：</p><pre class=\"code\" style=\"color: rgb(0, 0, 0); font-size: 16px;\">$ sudo ifconfig en0 ether `openssl rand -hex 6 | sed 's/\\(..\\)/\\1:/g; s/.$//'`\n</pre><p style=\"color: rgb(0, 0, 0); font-family: 'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti; font-size: 16px;\">&nbsp; &nbsp;上面的命令没有加到系统启动文件里，所以每次系统启动后会还原真实 MAC 地址。除非系统出问题，一般不会重启 Mac，平时用 Mac 也没必要关机，一般屏幕一合上就走人～</p><p style=\"color: rgb(0, 0, 0); font-family: 'Microsoft Yahei', 'Helvetica Neue', 'Luxi Sans', 'DejaVu Sans', Tahoma, 'Hiragino Sans GB', STHeiti; font-size: 16px;\"><img src=\"http://feeds.feedburner.com/~r/vpsee/~4/3JffBTrOW7U\" height=\"1\" width=\"1\"></p>"
+    }
+  ]
+}

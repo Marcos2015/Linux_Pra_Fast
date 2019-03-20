@@ -1,0 +1,9 @@
+{
+  "title": "linux修改Mac地址",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<pre id=\"recommend-content-1268233788\" class=\"recommend-text mb-10\" style=\"color: rgb(0, 0, 0); font-size: 14px;\">有三种方法：<br>方法一：<br>1.关闭网卡设备<br>ifconfig eth0 down<br>2.修改MAC地址<br>ifconfig eth0 hw ether MAC地址<br>3.重启网卡<br>ifconfig eth0 up<br><br>方法二：<br>以上方法一修改后linux重启后MAC又恢复为原来的，为了下次启动时修改后的MAC仍有效，我们可以修改文件file:/etc/rc.d/rc.sysinit(RedFlag Linux为这个文件，其他版本的linux应该不同)的内容，在该文件末尾加以下内容：<br>ifconfig eth0 down<br>ifconfig eth0 hw ether MAC地址<br>ifconfig eth0 up<br><br>方法三：<br>很简单的，只是在./etc/sysconfig/network-scripts/ifcfg-eth0中加入下面一句话： <br>MACADDR=00:AA:BB:CC:DD:EE</pre>"
+    }
+  ]
+}

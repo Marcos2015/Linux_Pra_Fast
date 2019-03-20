@@ -1,0 +1,9 @@
+{
+  "title": "mysql开机启动服务mysqld",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\"></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">chkconfig mysqld on &nbsp; (CentOS6.6版本)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">systemctl enable mariadb.service &nbsp; (CentOS 7.0版本)</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">输入完以上命令（只需输入一个则可以了，看版本输入具体哪个）</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">然后再输入reboot重启</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br></div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">进入mysql: mysql -uroot -p输入密码则可。</div>"
+    }
+  ]
+}

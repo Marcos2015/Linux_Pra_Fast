@@ -1,0 +1,9 @@
+{
+  "title": "添加PATH路径方",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">&nbsp;export PATH=/usr/local/cellar/wireshark/1.12.4</span><span style=\"font-family: Arial; font-size: 14px; color: rgb(255, 0, 0);\">:$PATH</span>"
+    }
+  ]
+}

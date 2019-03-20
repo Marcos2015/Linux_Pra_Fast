@@ -1,0 +1,9 @@
+{
+  "title": "C 字符串数组的问题",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<embed id=\"xunlei_com_thunder_helper_plugin_d462f475-c18e-46be-bd10-327458d045bd\" type=\"application/thunder_download_plugin\" height=\"0\" width=\"0\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><span style=\"font-size: 14px; color: rgb(51, 51, 51); font-family: arial, 'courier new', courier, 宋体, monospace, 'Microsoft YaHei'; line-height: 20px; white-space: pre-wrap;\">像比如C#中有string类型，如果要字符串数组的话就申明一个str[5]，这样就可以str[0],str[1]这样访问，但是在C语言中没string这个类型吧，申明一个char c[5]，这样也只能相当于申明了C#中string s; 这样一个变量，而不是数组了，如果C语要实现C#中那样str[0],str[1]，这样的效果怎么弄呢？请高手解答。</span><pre class=\"line mt-10 q-supply-content\" accuse=\"qSupply\" style=\"font-size: 14px; margin-top: 10px; margin-bottom: 0px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace, 'Microsoft YaHei'; word-break: break-all; color: rgb(51, 51, 51); line-height: 20px;\">嗯，我也觉得用二组数组，不过在赋值给一个一维的char类型就难了，有没有好方法?<br><br><div>比如，str[2][3] = {\"123\",\"abc\"};  我要把\"abc\"赋给一个char c; 这个变量中，不知道怎么弄，我是这样写c = str[1][0] + str[1][1] + str[1][2]; 这样应该不对吧。有什么方法能实现么？</div><div><br></div><div><br></div><div><br></div><div><br></div><div><pre id=\"best-content-602816748\" accuse=\"aContent\" class=\"best-text mb-10\" style=\"margin-top: 0px; margin-bottom: 10px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace, 'Microsoft YaHei'; line-height: 24px;\">char str[][5] = { \"1234\",\"abcd\" };<br>char c[10];<br><br>strcpy(c,str[0]);  // 实现 c = str[0]<br>strcat(c,str[1]);  // 实现 c = str[0]+str[1]<br>想实现字符串的操作，可以调用&lt;string.h&gt;中的库函数</pre></div></pre>"
+    }
+  ]
+}

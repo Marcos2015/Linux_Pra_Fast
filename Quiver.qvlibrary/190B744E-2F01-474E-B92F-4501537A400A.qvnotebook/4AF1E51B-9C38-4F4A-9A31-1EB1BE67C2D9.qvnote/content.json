@@ -1,0 +1,9 @@
+{
+  "title": "uname指令的问题",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><h1><span class=\"ask-title \">linux uname指令的问题？ ~uname -m x86_64 ~ uname -p i386 同一台机子，打印出来这两个，都什么意思呢</span></h1><br><br><h1><span class=\"ask-title \">uname -m x86_64:</span></h1>就是cpu是64位的，64位寻址，一次处理64位数据。</div><div style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><br><br><br><h1><span class=\"ask-title \">uname -p i386</span></h1>i386也是一个架构名，是80386架构，英特尔的。32</div>"
+    }
+  ]
+}

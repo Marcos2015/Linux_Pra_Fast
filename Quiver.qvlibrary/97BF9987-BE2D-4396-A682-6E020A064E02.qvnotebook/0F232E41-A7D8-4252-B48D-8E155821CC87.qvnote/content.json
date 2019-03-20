@@ -1,0 +1,9 @@
+{
+  "title": "Vim-不需切换root账户，写入权限限制文件的操作",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div><br></div><div><div id=\"isForwardContent\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\"><div style=\"line-height: 1.7; color: rgb(0, 0, 0);\"><div>进入权限文件编辑的时候。结束时，输入:</div><div><br></div><div>: w &nbsp;! sudo tee %</div><div><br></div><div>w 必须为小写，且必须与! 分开，不可连接在一起。！也需要与sudo 分开，不可紧挨一起。</div><div><br></div><div>然后弹出提示：</div><div>Warrning : File \"/etc/profile\" has changed and buffer was changed in Vim as well.</div><div>See \": help W12\" for more info.</div><div><br></div><div>[O]K , (L)oad File:</div><div><br></div><div>输入<span style=\"color: rgb(0, 0, 255);\">&nbsp;shift &nbsp; :</span></div><div>这时，<span style=\"color: rgb(255, 0, 255);\">如果按O的话，则必须输入: q!&nbsp;</span>,如果只输入q,则无法退出保存。(会提示E37: No write since last change(<span style=\"color: rgb(0, 128, 0);\">add ! to override)</span>)</div><div><span style=\"color: rgb(255, 0, 255);\">如果按l,则只需输入 q即可保存退出了。</span></div></div></div></div>"
+    }
+  ]
+}

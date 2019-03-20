@@ -1,0 +1,9 @@
+{
+  "title": "OSI-比喻",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<h2 class=\"headline-1\" style=\"color: rgb(0, 0, 0); font-family: Arial;\"><span class=\"headline-content\">比喻</span></h2><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">7 应用层：老板</div><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">6 表示层：相当于公司中演示稿老板、替老板写信的助理<div class=\"lemma-picture text-pic layout-right\" style=\"width: 160px; float: right;\"><a class=\"image-link nslog:9317\" href=\"http://baike.baidu.com/picture/38361/38361/0/472309f79052982279f13de4d5ca7bcb0b46d4d2.html?fr=lemma&amp;ct=single\" target=\"_blank\" title=\"工作比喻\" style=\"width: 160px; height: 220px;\"><img src=\"quiver-image-url/BD832FE996C68C3234531E5A97804B7B.png\" class=\"\" alt=\"工作比喻\" style=\"width: 160px; height: 220px;\" width=\"120\" height=\"165\"></a><span class=\"description\">工作比喻</span></div></div><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">5 会话层：相当于公司中收寄信、写信封与拆信封的秘书</div><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">4 传输层：相当于公司中跑邮局的送信职员</div><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">3 网络层：相当于邮局中的排序工人</div><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">2 数据链路层：相当于邮局中的装拆箱工人</div><div class=\"para\" style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">1 物理层：相当于邮局中的搬运工人<sup>[1]</sup></div>"
+    }
+  ]
+}

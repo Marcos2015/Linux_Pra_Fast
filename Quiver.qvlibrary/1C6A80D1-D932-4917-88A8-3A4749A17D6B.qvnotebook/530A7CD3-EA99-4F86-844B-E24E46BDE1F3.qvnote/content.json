@@ -1,0 +1,9 @@
+{
+  "title": "debian ubuntu安装开发工具包",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<div class=\"item-head\" style=\"font-size: 14px; padding: 0px 20px; color: rgb(69, 69, 69); font-family: Tahoma, Arial, Helvetica, STHeiti; line-height: 24px;\">apt-get install build-essential 一条命令搞定。</div><div class=\"item-head\" style=\"font-size: 14px; padding: 0px 20px; color: rgb(69, 69, 69); font-family: Tahoma, Arial, Helvetica, STHeiti; line-height: 24px;\"><br></div><div class=\"item-head\" style=\"font-size: 14px; padding: 0px 20px; color: rgb(69, 69, 69); font-family: Tahoma, Arial, Helvetica, STHeiti; line-height: 24px;\">Cent OS 也可以一条命令搞定</div><div class=\"item-head\" style=\"font-size: 14px; padding: 0px 20px; color: rgb(69, 69, 69); font-family: Tahoma, Arial, Helvetica, STHeiti; line-height: 24px;\">yum groupinstall 'Development Tools'&nbsp;<br></div><div class=\"item-head\" style=\"font-size: 14px; padding: 0px 20px; color: rgb(69, 69, 69); font-family: Tahoma, Arial, Helvetica, STHeiti; line-height: 24px;\">相比debian,这条命令安装了太多的包呢。</div>"
+    }
+  ]
+}

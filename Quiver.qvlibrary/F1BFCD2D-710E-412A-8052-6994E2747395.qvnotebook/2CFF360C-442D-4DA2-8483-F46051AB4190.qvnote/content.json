@@ -1,0 +1,9 @@
+{
+  "title": "windows C 与 linux C区别",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<span style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px;\">&nbsp; &nbsp; windows C库格式为 &nbsp;.dll( 动态链接库英文为DLL，是Dynamic Link Library 的缩写形式，DLL是一个包含可由多个程序同时使用的代码和数据的库，DLL不是可执行文件)。&nbsp;生成的*.exe 。</span><br style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px; word-wrap: break-word;\"><span style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; linux C 库格式为&nbsp; .so(.so 为共享库 : 动态库(shared library/shared object/dynamic link library)。生成*elf（Linux ELF ELF = Executable and Linkable Format，可执行连接格式，是UNIX系统实验室（USL）作为应用程序二进制接口（Application Binary Interface，ABI）而开发和发布的。扩展名为elf）。</span><br style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px; word-wrap: break-word;\"><span style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><br style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px; word-wrap: break-word;\"><span style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px;\">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 标准 C 库函数以及数据类型等在任何操作系统下都可以编译运行，并且效果是完全一样的，但其内部的实现原理及存储方式不一定一样。这些库函数实际上在不同系统操作系统上的实现就是依赖于操作系统本身的 API。Linux 上当然就是 Linux 的 API，而 Windows 则是 Windows API。就像最常见的 fopen 函数，在 Windows 上他是通过 CreateFile 函数实现的，而 Linux 上则是通过 open 函数。API 说白了就是函数，通常说 API 指的是操作系统函数。Linux 的 shell 相当于 Windows 的命令行，它只不过是一个解析命令和执行程序的环境。这个环境其实也是一个独立的程序。任何平台的程序要运行，就得依赖于该操作系统的 API。</span><div><span style=\"color: rgb(102, 102, 102); font-family: 宋体, Arial; font-size: 12px;\"><br></span></div>"
+    }
+  ]
+}

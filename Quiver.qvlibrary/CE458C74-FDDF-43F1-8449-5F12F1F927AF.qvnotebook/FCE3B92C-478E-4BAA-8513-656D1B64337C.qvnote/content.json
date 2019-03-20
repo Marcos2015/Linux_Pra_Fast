@@ -1,0 +1,9 @@
+{
+  "title": "CentOS设置屏幕关闭时间",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">关闭Centos上的屏幕保护：setterm -blank 0</p><p style=\"color: rgb(0, 0, 0); font-family: Arial; font-size: 14px;\">设置Centos上的屏幕保护为5分钟：setterm -blank 5</p>"
+    }
+  ]
+}

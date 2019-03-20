@@ -1,0 +1,9 @@
+{
+  "title": "#ifndef #define #endif 例子",
+  "cells": [
+    {
+      "type": "text",
+      "data": "<pre id=\"answer-content-822600892\" accuse=\"aContent\" class=\"answer-text mb-10\" style=\"font-size: 14px; margin-top: 0px; margin-bottom: 10px; padding: 0px; font-family: arial, 'courier new', courier, 宋体, monospace; color: rgb(51, 51, 51); line-height: 24px;\">通常自己写的头文件和自己写的源文件放在一起：<br>例如下列a.h和a.c文件放在同一项目目录下<br>使用头文件可以用#include关键字（自己定义的头文件建议使用\" \"，系统的使用&lt;&gt;）<br><br>//a.h<br>#ifndef A_H<br>#define A_H<br><br>int add(int a,int b);<br><br>#endif<br><br>然后在另一个c文件里面实现add()函数<br>//add.c<br>#include \"a.h\"<br>int add(int a,int b)<br><br>之后再在其他自己的c文件里面用add()函数的话：<br>//main.c<br>#include &lt;stdio.h&gt;<br>#include \"a.h\"<br>int main(){<br>   printf(\"1+1=%d\\n\",add(1,1));<br>   return 0;<br>}<br><br>以上是一个小小的例</pre>"
+    }
+  ]
+}

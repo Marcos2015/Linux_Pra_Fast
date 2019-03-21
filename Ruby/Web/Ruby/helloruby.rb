@@ -1,2 +1,0 @@
-print("Hello,Ruby.\n")
-

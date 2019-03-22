@@ -1,2 +1,2 @@
-/usr/local/Cellar/mysql/5.7.22/bin/mysqld
+/usr/local/Cellar/mysql/8.0.15/bin/mysqld
 

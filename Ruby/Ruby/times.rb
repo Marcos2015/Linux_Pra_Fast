@@ -1,4 +1,4 @@
 10.times do
-	print "Hello\n"
+	print "Hello"
 end
 

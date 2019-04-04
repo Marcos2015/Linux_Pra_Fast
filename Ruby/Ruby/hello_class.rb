@@ -27,9 +27,53 @@ class HelloWorld
 	end
 
 
+class << HelloWorld
+	def hello(name)
+		puts "#{name} said hello"
+	end
+end
+
+
+
+
+
+class HelloWorld
+	class << self
+		def hlllo(name)
+			puts "#{name} said hallo"
+		end
+	end
+end
+
+
+
+
+
 
 end
 
+
+class HelloWorld
+	class << self
+		def hallo(name)
+			puts "#{name} said hallo"
+		end
+	end
+end
+
+
+
+class << HelloWorld
+	def world(name)
+		puts "#{name} said hello"
+	end
+end
+
+
+
+
+HelloWorld.hello("John")
+HelloWorld.world("May")
 
 bob=HelloWorld.new("Bob")
 bob.great

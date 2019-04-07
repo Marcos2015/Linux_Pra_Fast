@@ -20,8 +20,10 @@ end
 
 
 Hello=Point.new
-Hello.swap
+p [ Hello.x,Hello.y ]
 
 Kitty=Point.new(1.0,2.0)
-p [p0.x,p0.y]
+Hello.swap(Kitty)
+
+p [ Hello.x, Hello.y ]
 

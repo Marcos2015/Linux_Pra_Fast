@@ -1,0 +1,404 @@
+Started GET "/" for ::1 at 2019-03-27 15:25:03 +0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "demo_development" does not exist
+):
+  
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:696:in `rescue in connect'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:691:in `connect'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:223:in `initialize'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `new'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/postgresql_adapter.rb:48:in `postgresql_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:811:in `new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:855:in `checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:834:in `try_to_checkout_new_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:795:in `acquire_connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:523:in `checkout'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:382:in `connection'
+activerecord (5.2.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1010:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.2.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.2.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+  [1m[35m (4113.0ms)[0m  [1m[35mCREATE DATABASE "demo_development" ENCODING = 'unicode'[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (515.4ms)[0m  [1m[35mCREATE DATABASE "demo_test" ENCODING = 'unicode'[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (48.0ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (43.4ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4665045258403983075)[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[36mActiveRecord::InternalMetadata Create (0.6ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2019-03-27 07:27:55.053987"], ["updated_at", "2019-03-27 07:27:55.053987"]]
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (40.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT pg_advisory_unlock(4665045258403983075)[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/zhaofeng/.rvm/rubies/ruby-2.6.0/lib/ruby/gems/2.6.0/gems/rake-12.3.2/lib/rake/task.rb:273
+Started GET "/" for ::1 at 2019-03-27 15:28:05 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.0ms)
+Completed 200 OK in 13ms (Views: 5.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-27 15:30:09 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 11ms (Views: 5.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-27 15:30:10 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 5ms (Views: 3.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-27 15:39:58 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.6ms)
+Completed 200 OK in 5ms (Views: 3.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 15:53:22 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 592ms (Views: 590.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:00:39 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:31:57 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 22ms (Views: 20.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:32:33 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:32:55 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:33:34 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (10.6ms)
+Completed 500 Internal Server Error in 14ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined method `now' for nil:NilClass):
+    2: <p>Find me in app/views/say/hello.html.erb</p>
+    3: 
+    4: <p>
+    5: It 's now  <%= @time.now   %>
+    6: </p>
+  
+app/views/say/hello.html.erb:5:in `_app_views_say_hello_html_erb___4128722999538011427_70171023354700'
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:33:51 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:34:48 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 21.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:47:52 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 25.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 16:47:54 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/goodbye" for 127.0.0.1 at 2019-03-27 19:34:30 +0800
+Processing by SayController#goodbye as HTML
+  Rendering say/goodbye.html.erb within layouts/application
+  Rendered say/goodbye.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 100ms (Views: 98.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/goodbye" for 127.0.0.1 at 2019-03-27 19:35:03 +0800
+Processing by SayController#goodbye as HTML
+  Rendering say/goodbye.html.erb within layouts/application
+  Rendered say/goodbye.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 15ms (Views: 14.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/goodbye" for 127.0.0.1 at 2019-03-27 19:46:05 +0800
+Processing by SayController#goodbye as HTML
+  Rendering say/goodbye.html.erb within layouts/application
+  Rendered say/goodbye.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 19:46:08 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 37ms (Views: 35.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 19:47:34 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/goodbye" for 127.0.0.1 at 2019-03-27 19:47:36 +0800
+Processing by SayController#goodbye as HTML
+  Rendering say/goodbye.html.erb within layouts/application
+  Rendered say/goodbye.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 19:47:38 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 19:53:27 +0800
+Processing by SayController#hello as HTML
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `know' for Time:Class
+Did you mean?  now):
+  
+app/controllers/say_controller.rb:4:in `hello'
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:35 +0800
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:37 +0800
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:37 +0800
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:44 +0800
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:45 +0800
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:46 +0800
+Started PUT "/__web_console/repl_sessions/7f7869e2333977d29ef4db89da3137e0" for 127.0.0.1 at 2019-03-27 19:55:50 +0800
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 19:57:18 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 20:00:05 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/h3ello" for 127.0.0.1 at 2019-03-27 20:00:27 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/say/h3ello"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/say/h3ello" for 127.0.0.1 at 2019-03-27 20:09:06 +0800
+  
+ActionController::RoutingError (No route matches [GET] "/say/h3ello"):
+  
+actionpack (5.2.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.1) lib/puma/configuration.rb:227:in `call'
+puma (3.12.1) lib/puma/server.rb:660:in `handle_request'
+puma (3.12.1) lib/puma/server.rb:474:in `process_client'
+puma (3.12.1) lib/puma/server.rb:334:in `block in run'
+puma (3.12.1) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 20:09:42 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 285ms (Views: 278.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.100 at 2019-03-27 20:18:29 +0800
+Cannot render console from 192.168.0.100! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (2.8ms)
+Completed 200 OK in 6ms (Views: 4.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.101 at 2019-03-27 20:20:12 +0800
+Cannot render console from 192.168.0.101! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.1ms)
+Completed 200 OK in 6ms (Views: 4.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 192.168.0.102 at 2019-03-27 20:22:56 +0800
+Cannot render console from 192.168.0.102! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.3ms)
+Completed 200 OK in 6ms (Views: 4.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 20:30:55 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 115ms (Views: 114.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-27 20:32:17 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2019-03-29 19:33:58 +0800
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/zhaofeng/.rvm/gems/ruby-2.6.0/gems/railties-5.2.2.1/lib/rails/templates/rails/welcome/index.html.erb (3.4ms)
+Completed 200 OK in 41ms (Views: 17.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-29 19:35:55 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 580ms (Views: 533.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/goodbye" for 127.0.0.1 at 2019-03-29 19:39:36 +0800
+Processing by SayController#goodbye as HTML
+  Rendering say/goodbye.html.erb within layouts/application
+  Rendered say/goodbye.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 35ms (Views: 18.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/goodbye" for 127.0.0.1 at 2019-03-29 22:38:57 +0800
+Processing by SayController#goodbye as HTML
+  Rendering say/goodbye.html.erb within layouts/application
+  Rendered say/goodbye.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 443ms (Views: 441.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/say/hello" for 127.0.0.1 at 2019-03-29 22:39:00 +0800
+Processing by SayController#hello as HTML
+  Rendering say/hello.html.erb within layouts/application
+  Rendered say/hello.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 21ms (Views: 19.4ms | ActiveRecord: 0.0ms)
+
+

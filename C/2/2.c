@@ -1,4 +1,4 @@
-#include <stdio.H>
+#include <stdio.h>
 #define π  3.14
 
 int main()
